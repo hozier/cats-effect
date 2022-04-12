@@ -1,0 +1,304 @@
+
+ßp<src/main/scala/com/rockthejvm/part2effects/IOTraversal.scala*>
+(com/rockthejvm/part2effects/IOTraversal.
+ *IOTraversal€*T
+;com/rockthejvm/part2effects/IOTraversal.heavyComputation().*heavyComputation€*R
+Ccom/rockthejvm/part2effects/IOTraversal.heavyComputation().(string)*string€*E
+1com/rockthejvm/part2effects/IOTraversal.workLoad. €*workLoad€*N
+8com/rockthejvm/part2effects/IOTraversal.clunkyFutures().*clunkyFutures€*
+local0 €*futures€*
+local1*string€*
+local2*x€*M
+5com/rockthejvm/part2effects/IOTraversal.listTraverse. €*listTraverse€*R
+:com/rockthejvm/part2effects/IOTraversal.traverseFutures().*traverseFutures€*
+local3 €*singleFuture€*
+local4*string€*
+local5*x€*J
+6com/rockthejvm/part2effects/IOTraversal.computeAsIO().*computeAsIO€*M
+>com/rockthejvm/part2effects/IOTraversal.computeAsIO().(string)*string€*;
+,com/rockthejvm/part2effects/IOTraversal.ios. €*ios€*
+local6*string€*E
+1com/rockthejvm/part2effects/IOTraversal.singleIO. €*singleIO€*
+local7*string€*U
+9com/rockthejvm/part2effects/IOTraversal.parallelSingleIO. €*parallelSingleIO€*
+local8*string€*D
+3com/rockthejvm/part2effects/IOTraversal.sequence().*sequence€*@
+6com/rockthejvm/part2effects/IOTraversal.sequence().[A]	*A€*P
+>com/rockthejvm/part2effects/IOTraversal.sequence().(listOfIOs)*	listOfIOs€*
+local9*x€*J
+6com/rockthejvm/part2effects/IOTraversal.sequence_v2().*sequence_v2€*C
+9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[F]	*F€*C
+9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[A]	*A€*Y
+Dcom/rockthejvm/part2effects/IOTraversal.sequence_v2().(wrapperOfIOs)*wrapperOfIOs€*
+local10*x€*J
+6com/rockthejvm/part2effects/IOTraversal.parSequence().*parSequence€*C
+9com/rockthejvm/part2effects/IOTraversal.parSequence().[A]	*A€*S
+Acom/rockthejvm/part2effects/IOTraversal.parSequence().(listOfIOs)*	listOfIOs€*
+local11*x€*P
+9com/rockthejvm/part2effects/IOTraversal.parSequence_v2().*parSequence_v2€*F
+<com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[F]	*F€*F
+<com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[A]	*A€*\
+Gcom/rockthejvm/part2effects/IOTraversal.parSequence_v2().(wrapperOfIOs)*wrapperOfIOs€*
+local12*x€*K
+4com/rockthejvm/part2effects/IOTraversal.singleIO_v2. €*singleIO_v2€*[
+<com/rockthejvm/part2effects/IOTraversal.parallelSingleIO_v2. €*parallelSingleIO_v2€*[
+<com/rockthejvm/part2effects/IOTraversal.parallelSingleIO_v3. €*parallelSingleIO_v3€*:
+.com/rockthejvm/part2effects/IOTraversal.run().*run€2&
+ #com/rockthejvm/part2effects/2
+ com/rockthejvm/2
+ com/2
+ cats/effect/IO.2
+ cats/effect/IO#2 
+ cats/effect/IOApp.2 
+ cats/effect/IOApp#2
+ cats/effect/2
+ cats/2&
+ scala/concurrent/Future.2&
+ scala/concurrent/Future#2
+ scala/concurrent/2
+ scala/2 
+ scala/util/Random.2 
+ scala/util/Random#2
+ scala/util/2
+ scala/26
+ (com/rockthejvm/part2effects/IOTraversal.2'
+! 'cats/effect/IOApp.Simple#2 
+  cats/effect/IOApp.2C
+	5	 ;5scala/concurrent/ExecutionContext.Implicits.global().2:
+	+	 4,scala/concurrent/ExecutionContext.Implicits.20
+		 *"scala/concurrent/ExecutionContext.2
+		 scala/concurrent/2
+			 scala/2I
+ ;com/rockthejvm/part2effects/IOTraversal.heavyComputation().2Q
+ Ccom/rockthejvm/part2effects/IOTraversal.heavyComputation().(string)2"
+ %scala/Predef.String#2&
+( .scala/concurrent/Future#2
+/ 2
+scala/Int#2.
+< < scala/concurrent/Future.apply().2&
+6 <scala/concurrent/Future.2'
+ java/lang/Thread#sleep().2
+ 
+java/lang/Thread#2#
+ scala/Int.int2long().2,
+ scala/util/Random#nextInt(+1).2 
+ scala/util/Random.2#
+ scala/Array#length().2)
+ java/lang/String#split(+1).2Q
+ 
+Ccom/rockthejvm/part2effects/IOTraversal.heavyComputation().(string)2C
+ 5scala/concurrent/ExecutionContext.Implicits.global().2?
+ 1com/rockthejvm/part2effects/IOTraversal.workLoad.2!
+ scala/package.List#2"
+ scala/Predef.String#27
+# #)scala/collection/IterableFactory#apply().2!
+ #scala/package.List.2F
+ 8com/rockthejvm/part2effects/IOTraversal.clunkyFutures().2
+ scala/Unit#2
+ local02!
+ scala/package.List#2&
+ scala/concurrent/Future#2
+  
+scala/Int#24
+. 1&scala/collection/immutable/List#map().2?
+% -1com/rockthejvm/part2effects/IOTraversal.workLoad.2I
+2 B;com/rockthejvm/part2effects/IOTraversal.heavyComputation().2
+2 2local128
+ *scala/collection/immutable/List#foreach().2
+ local020
+ "scala/concurrent/Future#foreach().2'
+ %scala/Predef.println(+1).2
+ local22C
+& &5scala/concurrent/ExecutionContext.Implicits.global().2
+ cats/Traverse.2
+ cats/Traverse#2
+	 cats/2*
+ cats/instances/package.list.2
+ cats/instances/2
+	 cats/2C
+ 5com/rockthejvm/part2effects/IOTraversal.listTraverse.2$
+ cats/Traverse.apply().2
+ cats/Traverse.2!
+ "scala/package.List#2C
+# #5cats/instances/ListInstances#catsStdInstancesForList.2H
+ :com/rockthejvm/part2effects/IOTraversal.traverseFutures().2
+ scala/Unit#2
+ local32&
+ scala/concurrent/Future#2!
+ !scala/package.List#2
+" %
+scala/Int#2'
+7 ?cats/Traverse#traverse().2C
+* 65com/rockthejvm/part2effects/IOTraversal.listTraverse.2?
+@ H1com/rockthejvm/part2effects/IOTraversal.workLoad.2I
+J Z;com/rockthejvm/part2effects/IOTraversal.heavyComputation().2
+J Jlocal426
+[ [(cats/Invariant.catsInstancesForFuture().2C
+[ [5scala/concurrent/ExecutionContext.Implicits.global().20
+   "scala/concurrent/Future#foreach().2
+   local32'
+    scala/Predef.println(+1).2
+   local52C
+ !  !5scala/concurrent/ExecutionContext.Implicits.global().2#
+## com/rockthejvm/utils/2
+## com/rockthejvm/2
+#	# com/2D
+&& 6com/rockthejvm/part2effects/IOTraversal.computeAsIO().2L
+&& >com/rockthejvm/part2effects/IOTraversal.computeAsIO().(string)2"
+&&  scala/Predef.String#2
+&#& %cats/effect/IO#2
+&&& )
+scala/Int#29
+)) 	+com/rockthejvm/utils/Utils$package.debug().2%
+&/& /cats/effect/IO.apply().2
+&-& /cats/effect/IO.2'
+'' java/lang/Thread#sleep().2
+'' 
+java/lang/Thread#2#
+'' scala/Int.int2long().2,
+'' scala/util/Random#nextInt(+1).2 
+'' scala/util/Random.2#
+(( scala/Array#length().2)
+(( java/lang/String#split(+1).2L
+(( 
+>com/rockthejvm/part2effects/IOTraversal.computeAsIO().(string)2:
+++ 	,com/rockthejvm/part2effects/IOTraversal.ios.2!
+++ scala/package.List#2
+++ cats/effect/IO#2
+++ 
+scala/Int#24
++$+ '&scala/collection/immutable/List#map().2?
+++ #1com/rockthejvm/part2effects/IOTraversal.workLoad.2D
++(+ 36com/rockthejvm/part2effects/IOTraversal.computeAsIO().2
++(+ (local62?
+,, 1com/rockthejvm/part2effects/IOTraversal.singleIO.2
+,, cats/effect/IO#2!
+,, scala/package.List#2
+,, 
+scala/Int#2'
+,-, 5cats/Traverse#traverse().2C
+, , ,5com/rockthejvm/part2effects/IOTraversal.listTraverse.2?
+,6, >1com/rockthejvm/part2effects/IOTraversal.workLoad.2D
+,@, K6com/rockthejvm/part2effects/IOTraversal.computeAsIO().2
+,@, @local72*
+,L, Lcats/effect/IO.asyncForIO().2+
+// cats/syntax/package.parallel.2
+// cats/syntax/2
+/	/ cats/2G
+00 9com/rockthejvm/part2effects/IOTraversal.parallelSingleIO.2
+00 cats/effect/IO#2!
+00 scala/package.List#2
+0 0 #
+scala/Int#2@
+010 <2cats/syntax/ParallelTraversableOps1#parTraverse().2G
+0(0 (9cats/syntax/ParallelSyntax#catsSyntaxParallelTraverse1().2?
+0(0 01com/rockthejvm/part2effects/IOTraversal.workLoad.2C
+000 05cats/instances/ListInstances#catsStdInstancesForList.2D
+0=0 H6com/rockthejvm/part2effects/IOTraversal.computeAsIO().2
+0=0 =local82C
+0I0 I5cats/instances/ListInstances#catsStdInstancesForList.2-
+0I0 Icats/effect/IO.parallelForIO().2A
+66 3com/rockthejvm/part2effects/IOTraversal.sequence().2D
+66 6com/rockthejvm/part2effects/IOTraversal.sequence().[A]2L
+66 >com/rockthejvm/part2effects/IOTraversal.sequence().(listOfIOs)2!
+66 !scala/package.List#2
+6"6 $cats/effect/IO#2D
+6%6 &6com/rockthejvm/part2effects/IOTraversal.sequence().[A]2
+6+6 -cats/effect/IO#2!
+6.6 2scala/package.List#2D
+636 46com/rockthejvm/part2effects/IOTraversal.sequence().[A]2'
+77 cats/Traverse#traverse().2C
+77 5com/rockthejvm/part2effects/IOTraversal.listTraverse.2L
+77 #>com/rockthejvm/part2effects/IOTraversal.sequence().(listOfIOs)2
+7%7 &local92
+7*7 +local92*
+7,7 ,cats/effect/IO.asyncForIO().2D
+:: 6com/rockthejvm/part2effects/IOTraversal.sequence_v2().2G
+:: 9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[F]2G
+:#: $9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[A]2R
+:&: 2Dcom/rockthejvm/part2effects/IOTraversal.sequence_v2().(wrapperOfIOs)2G
+:4: 59com/rockthejvm/part2effects/IOTraversal.sequence_v2().[F]2
+:6: 8cats/effect/IO#2G
+:9: :9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[A]2
+:: !cats/Traverse#2G
+:!: !9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[F]2
+:?: Acats/effect/IO#2G
+:B: C9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[F]2G
+:D: E9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[A]2'
+;; cats/Traverse#traverse().2$
+;; cats/Traverse.apply().2
+;; cats/Traverse.2G
+;; 9com/rockthejvm/part2effects/IOTraversal.sequence_v2().[F]2R
+;; %Dcom/rockthejvm/part2effects/IOTraversal.sequence_v2().(wrapperOfIOs)2
+;'; (local102
+;,; -local102*
+;.; .cats/effect/IO.asyncForIO().2D
+>> 6com/rockthejvm/part2effects/IOTraversal.parSequence().2G
+>> 9com/rockthejvm/part2effects/IOTraversal.parSequence().[A]2O
+>> Acom/rockthejvm/part2effects/IOTraversal.parSequence().(listOfIOs)2!
+> > $scala/package.List#2
+>%> 'cats/effect/IO#2G
+>(> )9com/rockthejvm/part2effects/IOTraversal.parSequence().[A]2
+>.> 0cats/effect/IO#2!
+>1> 5scala/package.List#2G
+>6> 79com/rockthejvm/part2effects/IOTraversal.parSequence().[A]2@
+?? 2cats/syntax/ParallelTraversableOps1#parTraverse().2G
+?? 9cats/syntax/ParallelSyntax#catsSyntaxParallelTraverse1().2O
+?? Acom/rockthejvm/part2effects/IOTraversal.parSequence().(listOfIOs)2C
+?? 5cats/instances/ListInstances#catsStdInstancesForList.2
+?? local112
+??  local112C
+?!? !5cats/instances/ListInstances#catsStdInstancesForList.2-
+?!? !cats/effect/IO.parallelForIO().2G
+BB 9com/rockthejvm/part2effects/IOTraversal.parSequence_v2().2J
+BB <com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[F]2J
+B&B '<com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[A]2U
+B)B 5Gcom/rockthejvm/part2effects/IOTraversal.parSequence_v2().(wrapperOfIOs)2J
+B7B 8<com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[F]2
+B9B ;cats/effect/IO#2J
+B<B =<com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[A]2
+BB $cats/Traverse#2J
+B$B $<com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[F]2
+BBB Dcats/effect/IO#2J
+BEB F<com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[F]2J
+BGB H<com/rockthejvm/part2effects/IOTraversal.parSequence_v2().[A]2@
+CC 2cats/syntax/ParallelTraversableOps1#parTraverse().2G
+CC 9cats/syntax/ParallelSyntax#catsSyntaxParallelTraverse1().2U
+CC Gcom/rockthejvm/part2effects/IOTraversal.parSequence_v2().(wrapperOfIOs)2
+CC local122
+C"C #local122-
+C$C $cats/effect/IO.parallelForIO().2B
+FF 4com/rockthejvm/part2effects/IOTraversal.singleIO_v2.2
+FF cats/effect/IO#2!
+FF scala/package.List#2
+FF 
+scala/Int#2'
+F0F 8cats/Traverse#sequence().2C
+F#F /5com/rockthejvm/part2effects/IOTraversal.listTraverse.2:
+F9F <,com/rockthejvm/part2effects/IOTraversal.ios.2*
+F=F =cats/effect/IO.asyncForIO().2J
+II <com/rockthejvm/part2effects/IOTraversal.parallelSingleIO_v2.2
+II cats/effect/IO#2!
+II "scala/package.List#2
+I#I &
+scala/Int#2D
+I+I 66com/rockthejvm/part2effects/IOTraversal.parSequence().2:
+I7I :,com/rockthejvm/part2effects/IOTraversal.ios.2J
+JJ <com/rockthejvm/part2effects/IOTraversal.parallelSingleIO_v3.2
+JJ cats/effect/IO#2!
+JJ "scala/package.List#2
+J#J &
+scala/Int#2=
+J/J :/cats/syntax/ParallelSequenceOps1#parSequence().2G
+J+J +9cats/syntax/ParallelSyntax#catsSyntaxParallelSequence1().2:
+J+J .,com/rockthejvm/part2effects/IOTraversal.ios.2C
+J.J .5cats/instances/ListInstances#catsStdInstancesForList.2C
+J:J :5cats/instances/ListInstances#catsStdInstancesForList.2-
+J:J :cats/effect/IO.parallelForIO().2<
+LL .com/rockthejvm/part2effects/IOTraversal.run().2$
+M)M -cats/effect/IO#void().29
+M#M (+com/rockthejvm/utils/Utils$package.debug().2#
+MM cats/effect/IO#map().2J
+MM <com/rockthejvm/part2effects/IOTraversal.parallelSingleIO_v3.25
+MM !'scala/collection/IterableOnceOps#sum().2/
+M!M !!scala/math/Numeric.IntIsIntegral.PZ 8A0ACECE72FA695A18EB214EA330B85E

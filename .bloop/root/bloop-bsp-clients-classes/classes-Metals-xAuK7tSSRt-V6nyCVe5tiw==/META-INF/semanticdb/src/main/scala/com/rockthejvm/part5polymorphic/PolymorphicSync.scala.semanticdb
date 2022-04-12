@@ -1,0 +1,229 @@
+
+±^Dsrc/main/scala/com/rockthejvm/part5polymorphic/PolymorphicSync.scala*J
+0com/rockthejvm/part5polymorphic/PolymorphicSync.
+ *PolymorphicSync€*Q
+;com/rockthejvm/part5polymorphic/PolymorphicSync.aDelayedIO. €*
+aDelayedIO€*S
+<com/rockthejvm/part5polymorphic/PolymorphicSync.aBlockingIO. €*aBlockingIO€*F
+7com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#*MySync€*T
+Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#`<init>`(). €@*<init>€*D
+:com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#[F]	*F€*O
+?com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay(). *delay€*L
+Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay().[A]	*A€*T
+Fcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay().(thunk)*thunk€*U
+Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#blocking(). *blocking€*O
+Ecom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#blocking().[A]	*A€*W
+Icom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#blocking().(thunk)*thunk€*M
+?com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().*defer€*L
+Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().[A]	*A€*T
+Fcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().(thunk)*thunk€*
+local0*x€*I
+7com/rockthejvm/part5polymorphic/PolymorphicSync.syncIO. €*syncIO€*W
+>com/rockthejvm/part5polymorphic/PolymorphicSync.aDelayedIO_v2. €*aDelayedIO_v2€*Y
+?com/rockthejvm/part5polymorphic/PolymorphicSync.aBlockingIO_v2. €*aBlockingIO_v2€*S
+<com/rockthejvm/part5polymorphic/PolymorphicSync.aDeferredIO. €*aDeferredIO€*H
+8com/rockthejvm/part5polymorphic/PolymorphicSync.Console#*Console€*U
+Ccom/rockthejvm/part5polymorphic/PolymorphicSync.Console#`<init>`(). €@*<init>€*E
+;com/rockthejvm/part5polymorphic/PolymorphicSync.Console#[F]	*F€*T
+Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println(). *println€*O
+Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println().[A]	*A€*O
+Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println().(a)*a€*V
+Ccom/rockthejvm/part5polymorphic/PolymorphicSync.Console#readLine(). *readLine€*J
+8com/rockthejvm/part5polymorphic/PolymorphicSync.Console.
+ *Console€*L
+?com/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().*make€*L
+Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().[F]	*F€*T
+Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().(sync)  *sync€*
+local1*x$1€*
+local2 €*in€*
+local3 €*out€*
+local4 *$anon€*
+local5*println€*
+local6	*A€*
+local7*a€*
+local8*readLine€* 
+local9 €*bufferedReader€*V
+@com/rockthejvm/part5polymorphic/PolymorphicSync.consoleReader().*consoleReader€*
+local10*console€*
+local11*x$1€*
+local12*name€*
+local13*x$1€*B
+6com/rockthejvm/part5polymorphic/PolymorphicSync.run().*run€2*
+ ' com/rockthejvm/part5polymorphic/2
+ com/rockthejvm/2
+ com/2
+ cats/Defer.2
+ cats/Defer#2
+ cats/2
+ cats/effect/IO.2
+ cats/effect/IO#2 
+ cats/effect/IOApp.2 
+ cats/effect/IOApp#2.
+ * cats/effect/package.MonadCancel.2'
+, 0cats/effect/package.Sync.2
+ cats/effect/2
+ cats/2%
+ java/io/BufferedReader.2%
+ java/io/BufferedReader#2(
+  1java/io/InputStreamReader.2(
+  1java/io/InputStreamReader#2
+ java/io/2
+ java/2>
+ 0com/rockthejvm/part5polymorphic/PolymorphicSync.2'
+% +cats/effect/IOApp.Simple#2 
+ $cats/effect/IOApp.2I
+		 ;com/rockthejvm/part5polymorphic/PolymorphicSync.aDelayedIO.2%
+		 cats/effect/IO.delay().2
+		 cats/effect/IO.2'
+
+
+ scala/Predef.println(+1).2J
+ <com/rockthejvm/part5polymorphic/PolymorphicSync.aBlockingIO.29
+ +cats/effect/IOCompanionPlatform#blocking().2
+ cats/effect/IO.2'
+ scala/Predef.println(+1).2'
+ java/lang/Thread#sleep().2
+ 
+java/lang/Thread#2E
+ 7com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#2P
+ Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#`<init>`().2.
+ ( cats/effect/package.MonadCancel#2H
+) *:com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#[F]2&
+, 5scala/package.Throwable#2
+< Acats/Defer#2H
+B C:com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#[F]2H
+ :com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#[F]2M
+ ?com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay().2P
+ Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay().[A]2T
+ Fcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay().(thunk)2P
+ Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay().[A]2H
+  :com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#[F]2P
+! "Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay().[A]2P
+ Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#blocking().2S
+ Ecom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#blocking().[A]2W
+ Icom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#blocking().(thunk)2S
+ Ecom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#blocking().[A]2H
+" #:com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#[F]2S
+$ %Ecom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#blocking().[A]2M
+ ?com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().2P
+ Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().[A]2T
+ Fcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().(thunk)2H
+ :com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#[F]2P
+ Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().[A]2H
+" #:com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#[F]2P
+$ %Bcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().[A]2%
+ cats/FlatMap#flatMap().2M
+ ?com/rockthejvm/part5polymorphic/PolymorphicSync.MySync#delay().2T
+ Fcom/rockthejvm/part5polymorphic/PolymorphicSync.MySync#defer().(thunk)2&
+ $scala/Predef.identity().2
+ local02E
+ 7com/rockthejvm/part5polymorphic/PolymorphicSync.syncIO.2.
+  cats/effect/kernel/Sync.apply().2'
+ cats/effect/package.Sync.2*
+ cats/effect/IO.asyncForIO().2L
+"" >com/rockthejvm/part5polymorphic/PolymorphicSync.aDelayedIO_v2.2.
+"" " cats/effect/kernel/Sync#delay().2E
+"" 7com/rockthejvm/part5polymorphic/PolymorphicSync.syncIO.2'
+## scala/Predef.println(+1).2M
+'' ?com/rockthejvm/part5polymorphic/PolymorphicSync.aBlockingIO_v2.21
+'' &#cats/effect/kernel/Sync#blocking().2E
+'' 7com/rockthejvm/part5polymorphic/PolymorphicSync.syncIO.2'
+(( scala/Predef.println(+1).2'
+)) java/lang/Thread#sleep().2
+)) 
+java/lang/Thread#2J
+-- <com/rockthejvm/part5polymorphic/PolymorphicSync.aDeferredIO.2%
+-- cats/effect/IO.defer().2
+-- cats/effect/IO.2I
+-- ';com/rockthejvm/part5polymorphic/PolymorphicSync.aDelayedIO.2F
+22 8com/rockthejvm/part5polymorphic/PolymorphicSync.Console#2Q
+22 Ccom/rockthejvm/part5polymorphic/PolymorphicSync.Console#`<init>`().2I
+22 ;com/rockthejvm/part5polymorphic/PolymorphicSync.Console#[F]2P
+33 Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println().2S
+33 Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println().[A]2S
+33 Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println().(a)2S
+33 Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println().[A]2I
+33 ;com/rockthejvm/part5polymorphic/PolymorphicSync.Console#[F]2
+33  scala/Unit#2Q
+44 Ccom/rockthejvm/part5polymorphic/PolymorphicSync.Console#readLine().2I
+44 ;com/rockthejvm/part5polymorphic/PolymorphicSync.Console#[F]2"
+44 scala/Predef.String#2*
+77 cats/syntax/package.functor.2
+77 cats/syntax/2
+7	7 cats/2F
+8	8 8com/rockthejvm/part5polymorphic/PolymorphicSync.Console.2M
+99 ?com/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().2P
+99 Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().[F]2S
+99 Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().(sync)2'
+99 #cats/effect/package.Sync#2P
+9$9 %Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().[F]2P
+9)9 *Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().[F]2F
+9+9 28com/rockthejvm/part5polymorphic/PolymorphicSync.Console#2P
+939 4Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().[F]2%
+9\9 _cats/Functor.Ops#map().27
+999 9)cats/Functor.ToFunctorOps#toFunctorOps().2&
+9>9 Bcats/Applicative#pure().2S
+999 =Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().(sync)2#
+9D9 Dscala/Tuple2.apply().2"
+9K9 Mjava/lang/System#in.2
+9D9 Jjava/lang/System#2#
+9V9 Yjava/lang/System#out.2
+9O9 Ujava/lang/System#2S
+9[9 [Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().(sync)2
+:: local12%
+:: scala/Tuple2.unapply().2
+:: local22
+:: local32F
+:: #8com/rockthejvm/part5polymorphic/PolymorphicSync.Console#2P
+:$: %Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().[F]2
+;; local52
+;; local62
+;; local72
+;; local62P
+;; Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().[F]2
+; ; $scala/Unit#21
+<< #cats/effect/kernel/Sync#blocking().2S
+<
+< Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().(sync)2.
+<< # java/io/PrintStream#println(+9).2
+<< local32
+<$< %local72
+>> local82P
+>> Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().[F]2"
+>>  scala/Predef.String#2
+?? local922
+?1? 1$java/io/BufferedReader#`<init>`(+1).2%
+?#? 1java/io/BufferedReader#23
+?G? G%java/io/InputStreamReader#`<init>`().2(
+?6? Gjava/io/InputStreamReader#2
+?H? Jlocal221
+@@ #cats/effect/kernel/Sync#blocking().2S
+@
+@ Ecom/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().(sync)22
+@'@ /$java/io/BufferedReader#readLine(+1).2
+@@ &local92N
+NN @com/rockthejvm/part5polymorphic/PolymorphicSync.consoleReader().2
+NN cats/effect/IO#2
+NN scala/Unit#2'
+OO cats/effect/IO#flatMap().2M
+OO ?com/rockthejvm/part5polymorphic/PolymorphicSync.Console.make().2F
+OO 8com/rockthejvm/part5polymorphic/PolymorphicSync.Console.2*
+OO cats/effect/IO.asyncForIO().2
+OO local102'
+P1P 1cats/effect/IO#flatMap().2P
+PP Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println().2
+P	P local102
+PP local112'
+QQ cats/effect/IO#flatMap().2Q
+QQ Ccom/rockthejvm/part5polymorphic/PolymorphicSync.Console#readLine().2
+QQ local102
+QQ local122#
+R8R 8cats/effect/IO#map().2P
+RR Bcom/rockthejvm/part5polymorphic/PolymorphicSync.Console#println().2
+R	R local102&
+R6R 7scala/StringContext#s().2*
+RR scala/StringContext.apply().2
+RR #local122
+RR local132D
+UU 6com/rockthejvm/part5polymorphic/PolymorphicSync.run().2N
+UU "@com/rockthejvm/part5polymorphic/PolymorphicSync.consoleReader().PZ FEB3A4B2DAF59E40F32EA60482B8DAD3

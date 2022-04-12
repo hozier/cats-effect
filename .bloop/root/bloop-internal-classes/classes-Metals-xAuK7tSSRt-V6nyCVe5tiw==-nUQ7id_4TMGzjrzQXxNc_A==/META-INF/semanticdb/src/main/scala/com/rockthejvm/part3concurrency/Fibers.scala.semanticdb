@@ -1,0 +1,558 @@
+
+ƒù;src/main/scala/com/rockthejvm/part3concurrency/Fibers.scala*8
+'com/rockthejvm/part3concurrency/Fibers.
+ *FibersÄ*N
+5com/rockthejvm/part3concurrency/Fibers.meaningOfLife. Ä*meaningOfLifeÄ*B
+/com/rockthejvm/part3concurrency/Fibers.favLang. Ä*favLangÄ*M
+7com/rockthejvm/part3concurrency/Fibers.sameThreadIOs().*sameThreadIOsÄ*
+local0*x$1Ä*
+local1*x$1Ä*I
+5com/rockthejvm/part3concurrency/Fibers.createFiber().*createFiberÄ*@
+.com/rockthejvm/part3concurrency/Fibers.aFiber. Ä*aFiberÄ*W
+<com/rockthejvm/part3concurrency/Fibers.differentThreadIOs().*differentThreadIOsÄ*
+local2*x$1Ä*
+local3*x$1Ä*[
+>com/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().*runOnSomeOtherThreadÄ*K
+Acom/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().[A]	*AÄ*M
+Bcom/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().(io)*ioÄ*
+local4*fibÄ*
+local5*resultÄ*^
+=com/rockthejvm/part3concurrency/Fibers.someIOOnAnotherThread. Ä*someIOOnAnotherThreadÄ*j
+Ccom/rockthejvm/part3concurrency/Fibers.someResultFromAnotherThread. Ä*someResultFromAnotherThreadÄ*
+local6*x$1Ä*
+local7 Ä*effectÄ*
+local8 Ä*eÄ*[
+>com/rockthejvm/part3concurrency/Fibers.throwOnAnotherThread().*throwOnAnotherThreadÄ*
+local9*fibÄ*
+local10*resultÄ*G
+4com/rockthejvm/part3concurrency/Fibers.testCancel().*
+testCancelÄ*
+local11 Ä*taskÄ*.
+local12 Ä*taskWithCancellationHandlerÄ*
+local13*fibÄ*
+local14*x$1Ä*
+local15*x$1Ä*
+local16*resultÄ*a
+Acom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().*processResultsFromFiberÄ*N
+Dcom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().[A]	*AÄ*P
+Ecom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().(io)*ioÄ*
+local17 Ä*ioResultÄ*
+local18*fibÄ*
+local19*resultÄ*
+local20*x$1Ä*
+local21 Ä*faÄ*
+local22 Ä*eÄ*A
+1com/rockthejvm/part3concurrency/Fibers.testEx1().*testEx1Ä*
+local23 Ä*aComputationÄ*C
+2com/rockthejvm/part3concurrency/Fibers.tupleIOs().*tupleIOsÄ*?
+5com/rockthejvm/part3concurrency/Fibers.tupleIOs().[A]	*AÄ*?
+5com/rockthejvm/part3concurrency/Fibers.tupleIOs().[B]	*BÄ*C
+7com/rockthejvm/part3concurrency/Fibers.tupleIOs().(ioa)*ioaÄ*C
+7com/rockthejvm/part3concurrency/Fibers.tupleIOs().(iob)*iobÄ*
+local24 Ä*resultÄ*
+local25*fibaÄ*
+local26*fibbÄ*
+local27*resultaÄ*
+local28*resultbÄ*
+local29*x$1Ä*
+local30 Ä*faÄ*
+local31 Ä*fbÄ*
+local32*aÄ*
+local33*bÄ*
+local34 Ä*eÄ*
+local35 Ä*eÄ*A
+1com/rockthejvm/part3concurrency/Fibers.testEx2().*testEx2Ä*
+local36 Ä*firstIOÄ*
+local37 Ä*secondIOÄ*A
+1com/rockthejvm/part3concurrency/Fibers.timeout().*timeoutÄ*>
+4com/rockthejvm/part3concurrency/Fibers.timeout().[A]	*AÄ*@
+5com/rockthejvm/part3concurrency/Fibers.timeout().(io)*ioÄ*L
+;com/rockthejvm/part3concurrency/Fibers.timeout().(duration)*durationÄ*
+local38 Ä*computationÄ*
+local39*fibÄ*
+local40*x$1Ä*
+local41*resultÄ*
+local42*x$1Ä*
+local43 Ä*faÄ*
+local44 Ä*eÄ*A
+1com/rockthejvm/part3concurrency/Fibers.testEx3().*testEx3Ä*
+local45 Ä*aComputationÄ*9
+-com/rockthejvm/part3concurrency/Fibers.run().*runÄ2*
+ ' com/rockthejvm/part3concurrency/2
+ com/rockthejvm/2
+ com/22
+# +$cats/effect/kernel/Outcome.Canceled.22
+# +$cats/effect/kernel/Outcome.Canceled#21
+- 4#cats/effect/kernel/Outcome.Errored.21
+- 4#cats/effect/kernel/Outcome.Errored#23
+6 ?%cats/effect/kernel/Outcome.Succeeded.23
+6 ?%cats/effect/kernel/Outcome.Succeeded#2)
+ !cats/effect/kernel/Outcome.2!
+ cats/effect/kernel/2
+ cats/effect/2
+ cats/2
+ cats/effect/IO.2
+ cats/effect/IO#2 
+ $cats/effect/IOApp.2 
+ $cats/effect/IOApp#2*
+& -cats/effect/package.Outcome.2
+ cats/effect/2
+ cats/2(
+  scala/concurrent/duration/2
+ scala/concurrent/2
+ scala/25
+ 'com/rockthejvm/part3concurrency/Fibers.2'
+ "cats/effect/IOApp.Simple#2 
+ cats/effect/IOApp.2C
+ 5com/rockthejvm/part3concurrency/Fibers.meaningOfLife.2$
+ cats/effect/IO.pure().2
+ cats/effect/IO.2=
+		 /com/rockthejvm/part3concurrency/Fibers.favLang.2$
+		 cats/effect/IO.pure().2
+		 cats/effect/IO.2#
+ com/rockthejvm/utils/2
+ com/rockthejvm/2
+	 com/2E
+ 7com/rockthejvm/part3concurrency/Fibers.sameThreadIOs().2'
+ cats/effect/IO#flatMap().29
+ +com/rockthejvm/utils/Utils$package.debug().2C
+	 5com/rockthejvm/part3concurrency/Fibers.meaningOfLife.2
+ local02#
+ cats/effect/IO#map().29
+ +com/rockthejvm/utils/Utils$package.debug().2=
+	 /com/rockthejvm/part3concurrency/Fibers.favLang.2
+ local12C
+ 5com/rockthejvm/part3concurrency/Fibers.createFiber().2(
+ cats/effect/package.Fiber#2&
+ &scala/package.Throwable#2"
+( .scala/Predef.String#2#
+2 5scala/Predef.`???`().2<
+ .com/rockthejvm/part3concurrency/Fibers.aFiber.2
+ cats/effect/IO#2(
+ cats/effect/package.Fiber#2&
+ $scala/package.Throwable#2
+& )
+scala/Int#2%
+B Gcats/effect/IO#start().29
+< A+com/rockthejvm/utils/Utils$package.debug().2C
+. ;5com/rockthejvm/part3concurrency/Fibers.meaningOfLife.2J
+ <com/rockthejvm/part3concurrency/Fibers.differentThreadIOs().2'
+ cats/effect/IO#flatMap().2<
+	 .com/rockthejvm/part3concurrency/Fibers.aFiber.2
+ local22#
+ cats/effect/IO#map().29
+ +com/rockthejvm/utils/Utils$package.debug().2=
+	 /com/rockthejvm/part3concurrency/Fibers.favLang.2
+ local32L
+ >com/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().2O
+ Acom/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().[A]2P
+  Bcom/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().(io)2
+" $cats/effect/IO#2O
+% &Acom/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().[A]2
+* ,cats/effect/IO#2*
+- 4cats/effect/package.Outcome#2&
+9 Bscala/package.Throwable#2O
+D EAcom/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().[A]2'
+ cats/effect/IO#flatMap().2%
+ cats/effect/IO#start().2P
+ Bcom/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().(io)2
+ local42#
+   cats/effect/IO#map().2.
+    cats/effect/kernel/Fiber#join().2
+   local42
+   
+local52
+!
+! local52K
+)) =com/rockthejvm/part3concurrency/Fibers.someIOOnAnotherThread.2L
+)) 2>com/rockthejvm/part3concurrency/Fibers.runOnSomeOtherThread().2C
+)3) @5com/rockthejvm/part3concurrency/Fibers.meaningOfLife.2Q
+** !Ccom/rockthejvm/part3concurrency/Fibers.someResultFromAnotherThread.2'
+*:* Acats/effect/IO#flatMap().2K
+*$* 9=com/rockthejvm/part3concurrency/Fibers.someIOOnAnotherThread.2
+++ local62=
+++ /cats/effect/kernel/Outcome.Succeeded.unapply().23
++	+ %cats/effect/kernel/Outcome.Succeeded.2
+++ local72
+++ $local72;
+,, -cats/effect/kernel/Outcome.Errored.unapply().21
+,	, #cats/effect/kernel/Outcome.Errored.2
+,, local82%
+,, cats/effect/IO.apply().2
+,, cats/effect/IO.2<
+-- .cats/effect/kernel/Outcome.Canceled.unapply().22
+-	- $cats/effect/kernel/Outcome.Canceled.2%
+-- cats/effect/IO.apply().2
+-- cats/effect/IO.2L
+00 >com/rockthejvm/part3concurrency/Fibers.throwOnAnotherThread().2'
+1N1 Ncats/effect/IO#flatMap().2%
+1I1 Ncats/effect/IO#start().2*
+11 cats/effect/IO.raiseError().2
+11 cats/effect/IO.2
+11 
+scala/Int#26
+121 2(java/lang/RuntimeException#`<init>`(+1).2-
+1"1 2scala/package.RuntimeException#2
+11 local92#
+22 cats/effect/IO#map().2.
+22  cats/effect/kernel/Fiber#join().2
+22 local92
+22 
+local102
+3
+3 local102B
+55 4com/rockthejvm/part3concurrency/Fibers.testCancel().2
+66 local112$
+6:6 <cats/effect/IO#`>>`().2$
+6$6 &cats/effect/IO#`>>`().29
+66 #+com/rockthejvm/utils/Utils$package.debug().2%
+66 cats/effect/IO.apply().2
+66 cats/effect/IO.2%
+6*6 /cats/effect/IO.sleep().2
+6'6 )cats/effect/IO.2E
+626 87scala/concurrent/duration/DurationConversions#second().2>
+606 00scala/concurrent/duration/package.DurationInt().29
+6H6 M+com/rockthejvm/utils/Utils$package.debug().2%
+6?6 ?cats/effect/IO.apply().2
+6=6 ?cats/effect/IO.2
+88 #local122(
+8+8 3cats/effect/IO#onCancel().2
+8&8 *local112$
+8U8 Ycats/effect/IO#void().29
+8O8 T+com/rockthejvm/utils/Utils$package.debug().2%
+868 6cats/effect/IO.apply().2
+848 6cats/effect/IO.2'
+;.; .cats/effect/IO#flatMap().2%
+;); .cats/effect/IO#start().2
+;; (local122
+;; 	local132'
+<9< 9cats/effect/IO#flatMap().2$
+< < "cats/effect/IO#`>>`().2%
+<< cats/effect/IO.sleep().2
+<< cats/effect/IO.2E
+<< 7scala/concurrent/duration/DurationConversions#millis().2>
+<< 0scala/concurrent/duration/package.DurationInt().29
+<4< 9+com/rockthejvm/utils/Utils$package.debug().2%
+<%< %cats/effect/IO.apply().2
+<#< %cats/effect/IO.2
+<< local142'
+== cats/effect/IO#flatMap().20
+== "cats/effect/kernel/Fiber#cancel().2
+== local132
+== local152#
+>> cats/effect/IO#map().2.
+>>  cats/effect/kernel/Fiber#join().2
+>> local132
+>> local162
+?? local162O
+XX Acom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().2R
+XX Dcom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().[A]2S
+X!X #Ecom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().(io)2
+X%X 'cats/effect/IO#2R
+X(X )Dcom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().[A]2
+X-X /cats/effect/IO#2R
+X0X 1Dcom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().[A]2
+YY local172'
+ZZ cats/effect/IO#flatMap().2%
+ZZ cats/effect/IO#start().29
+ZZ +com/rockthejvm/utils/Utils$package.debug().2S
+ZZ Ecom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().(io)2
+ZZ 	local182#
+[[ cats/effect/IO#map().2.
+[[  cats/effect/kernel/Fiber#join().2
+[[ local182
+[[ local192
+\\ local192'
+^^ cats/effect/IO#flatMap().2
+^^ local172
+__ local202=
+__ /cats/effect/kernel/Outcome.Succeeded.unapply().23
+__ %cats/effect/kernel/Outcome.Succeeded.2
+__ local212
+__ local212;
+`` -cats/effect/kernel/Outcome.Errored.unapply().21
+`` #cats/effect/kernel/Outcome.Errored.2
+`` local222*
+`` &cats/effect/IO.raiseError().2
+`` cats/effect/IO.2
+`'` (local222<
+aa .cats/effect/kernel/Outcome.Canceled.unapply().22
+aa $cats/effect/kernel/Outcome.Canceled.2*
+aa &cats/effect/IO.raiseError().2
+aa cats/effect/IO.26
+a;a ;(java/lang/RuntimeException#`<init>`(+1).2-
+a+a ;scala/package.RuntimeException#2?
+ee 1com/rockthejvm/part3concurrency/Fibers.testEx1().2
+ff local232$
+fWf Ycats/effect/IO#`>>`().2$
+fBf Dcats/effect/IO#`>>`().2$
+f,f .cats/effect/IO#`>>`().29
+f&f ++com/rockthejvm/utils/Utils$package.debug().2%
+ff cats/effect/IO.apply().2
+ff cats/effect/IO.2%
+f2f 7cats/effect/IO.sleep().2
+f/f 1cats/effect/IO.2E
+f:f @7scala/concurrent/duration/DurationConversions#second().2>
+f8f 80scala/concurrent/duration/package.DurationInt().29
+fQf V+com/rockthejvm/utils/Utils$package.debug().2%
+fGf Gcats/effect/IO.apply().2
+fEf Gcats/effect/IO.2%
+f\f \cats/effect/IO.apply().2
+fZf \cats/effect/IO.2$
+g*g .cats/effect/IO#void().2O
+gg Acom/rockthejvm/part3concurrency/Fibers.processResultsFromFiber().2
+gg (local232@
+kk 2com/rockthejvm/part3concurrency/Fibers.tupleIOs().2C
+kk 5com/rockthejvm/part3concurrency/Fibers.tupleIOs().[A]2C
+kk 5com/rockthejvm/part3concurrency/Fibers.tupleIOs().[B]2E
+kk 7com/rockthejvm/part3concurrency/Fibers.tupleIOs().(ioa)2
+kk cats/effect/IO#2C
+kk 5com/rockthejvm/part3concurrency/Fibers.tupleIOs().[A]2E
+k!k $7com/rockthejvm/part3concurrency/Fibers.tupleIOs().(iob)2
+k&k (cats/effect/IO#2C
+k)k *5com/rockthejvm/part3concurrency/Fibers.tupleIOs().[B]2
+k.k 0cats/effect/IO#2C
+k2k 35com/rockthejvm/part3concurrency/Fibers.tupleIOs().[A]2C
+k5k 65com/rockthejvm/part3concurrency/Fibers.tupleIOs().[B]2
+ll local242'
+mm cats/effect/IO#flatMap().2%
+mm cats/effect/IO#start().2E
+mm 7com/rockthejvm/part3concurrency/Fibers.tupleIOs().(ioa)2
+mm 
+local252'
+nn cats/effect/IO#flatMap().2%
+nn cats/effect/IO#start().2E
+nn 7com/rockthejvm/part3concurrency/Fibers.tupleIOs().(iob)2
+nn 
+local262'
+oo cats/effect/IO#flatMap().2.
+oo  cats/effect/kernel/Fiber#join().2
+oo local252
+oo local272#
+pp cats/effect/IO#map().2.
+pp  cats/effect/kernel/Fiber#join().2
+pp local262
+pp local282#
+qq scala/Tuple2.apply().2
+qq local272
+qq local282'
+ss cats/effect/IO#flatMap().2
+ss 
+local242
+tt local292%
+tt scala/Tuple2.unapply().2=
+tt /cats/effect/kernel/Outcome.Succeeded.unapply().23
+tt %cats/effect/kernel/Outcome.Succeeded.2
+tt local302=
+t$t $/cats/effect/kernel/Outcome.Succeeded.unapply().23
+tt $%cats/effect/kernel/Outcome.Succeeded.2
+t%t 'local312'
+uu cats/effect/IO#flatMap().2
+uu local302
+uu 	local322#
+vv cats/effect/IO#map().2
+vv local312
+vv 	local332#
+ww scala/Tuple2.apply().2
+ww local322
+ww local332%
+xx scala/Tuple2.unapply().2;
+xx -cats/effect/kernel/Outcome.Errored.unapply().21
+xx #cats/effect/kernel/Outcome.Errored.2
+xx local342*
+x!x +cats/effect/IO.raiseError().2
+xx  cats/effect/IO.2
+x,x -local342%
+yy scala/Tuple2.unapply().2;
+yy -cats/effect/kernel/Outcome.Errored.unapply().21
+yy #cats/effect/kernel/Outcome.Errored.2
+yy local352*
+y!y +cats/effect/IO.raiseError().2
+yy  cats/effect/IO.2
+y,y -local352*
+zz cats/effect/IO.raiseError().2
+zz cats/effect/IO.26
+z2z 2(java/lang/RuntimeException#`<init>`(+1).2-
+z"z 2scala/package.RuntimeException#2?
+~~ 1com/rockthejvm/part3concurrency/Fibers.testEx2().2
+ local362$
+& (cats/effect/IO#`>>`().2%
+ cats/effect/IO.sleep().2
+ cats/effect/IO.2F
+ $8scala/concurrent/duration/DurationConversions#seconds().2>
+ 0scala/concurrent/duration/package.DurationInt().29
+/ 4+com/rockthejvm/utils/Utils$package.debug().2%
++ +cats/effect/IO.apply().2
+) +cats/effect/IO.2
+
+ÄÄ local372&
+
+Ä'Ä )cats/effect/IO#`>>`().2'
+
+ÄÄ cats/effect/IO.sleep().2
+
+ÄÄ cats/effect/IO.2H
+
+ÄÄ %8scala/concurrent/duration/DurationConversions#seconds().2@
+
+ÄÄ 0scala/concurrent/duration/package.DurationInt().2;
+
+Ä0Ä 5+com/rockthejvm/utils/Utils$package.debug().2'
+
+Ä,Ä ,cats/effect/IO.apply().2
+
+Ä*Ä ,cats/effect/IO.2&
+
+Å&Å *cats/effect/IO#void().2;
+
+Å Å %+com/rockthejvm/utils/Utils$package.debug().2B
+
+ÅÅ 2com/rockthejvm/part3concurrency/Fibers.tupleIOs().2
+
+ÅÅ local362
+
+ÅÅ local372A
+
+ÖÖ 1com/rockthejvm/part3concurrency/Fibers.timeout().2D
+
+ÖÖ 4com/rockthejvm/part3concurrency/Fibers.timeout().[A]2E
+
+ÖÖ 5com/rockthejvm/part3concurrency/Fibers.timeout().(io)2
+
+ÖÖ cats/effect/IO#2D
+
+ÖÖ 4com/rockthejvm/part3concurrency/Fibers.timeout().[A]2K
+
+ÖÖ $;com/rockthejvm/part3concurrency/Fibers.timeout().(duration)29
+
+Ö&Ö 4)scala/concurrent/duration/FiniteDuration#2
+
+Ö7Ö 9cats/effect/IO#2D
+
+Ö:Ö ;4com/rockthejvm/part3concurrency/Fibers.timeout().[A]2
+
+ÜÜ local382)
+
+áá cats/effect/IO#flatMap().2'
+
+áá cats/effect/IO#start().2E
+
+áá 5com/rockthejvm/part3concurrency/Fibers.timeout().(io)2
+
+áá 	local392)
+
+à3à 3cats/effect/IO#flatMap().2'
+
+à.à 3cats/effect/IO#start().2&
+
+àà !cats/effect/IO#`>>`().2'
+
+àà cats/effect/IO.sleep().2
+
+àà cats/effect/IO.2K
+
+àà ;com/rockthejvm/part3concurrency/Fibers.timeout().(duration)22
+
+à&à ,"cats/effect/kernel/Fiber#cancel().2
+
+à"à %local392
+
+àà local402%
+
+ââ cats/effect/IO#map().20
+
+ââ  cats/effect/kernel/Fiber#join().2
+
+ââ local392
+
+ââ local412
+
+ää local412)
+
+åå cats/effect/IO#flatMap().2
+
+åå local382
+
+çç local422?
+
+çç /cats/effect/kernel/Outcome.Succeeded.unapply().25
+
+çç %cats/effect/kernel/Outcome.Succeeded.2
+
+çç local432
+
+çç local432=
+
+éé -cats/effect/kernel/Outcome.Errored.unapply().23
+
+éé #cats/effect/kernel/Outcome.Errored.2
+
+éé local442,
+
+éé &cats/effect/IO.raiseError().2
+
+éé cats/effect/IO.2
+
+é'é (local442>
+
+èè .cats/effect/kernel/Outcome.Canceled.unapply().24
+
+èè $cats/effect/kernel/Outcome.Canceled.2,
+
+èè &cats/effect/IO.raiseError().2
+
+èè cats/effect/IO.28
+
+è;è ;(java/lang/RuntimeException#`<init>`(+1).2/
+
+è+è ;scala/package.RuntimeException#2A
+
+ìì 1com/rockthejvm/part3concurrency/Fibers.testEx3().2
+
+îî local452&
+
+îWî Ycats/effect/IO#`>>`().2&
+
+îBî Dcats/effect/IO#`>>`().2&
+
+î,î .cats/effect/IO#`>>`().2;
+
+î&î ++com/rockthejvm/utils/Utils$package.debug().2'
+
+îî cats/effect/IO.apply().2
+
+îî cats/effect/IO.2'
+
+î2î 7cats/effect/IO.sleep().2
+
+î/î 1cats/effect/IO.2G
+
+î:î @7scala/concurrent/duration/DurationConversions#second().2@
+
+î8î 80scala/concurrent/duration/package.DurationInt().2;
+
+îQî V+com/rockthejvm/utils/Utils$package.debug().2'
+
+îGî Gcats/effect/IO.apply().2
+
+îEî Gcats/effect/IO.2'
+
+î\î \cats/effect/IO.apply().2
+
+îZî \cats/effect/IO.2&
+
+ï,ï 0cats/effect/IO#void().2;
+
+ï&ï ++com/rockthejvm/utils/Utils$package.debug().2A
+
+ïï 1com/rockthejvm/part3concurrency/Fibers.timeout().2
+
+ïï local452G
+
+ïï $7scala/concurrent/duration/DurationConversions#millis().2@
+
+ïï 0scala/concurrent/duration/package.DurationInt().2=
+
+òò -com/rockthejvm/part3concurrency/Fibers.run().2A
+
+òò 1com/rockthejvm/part3concurrency/Fibers.testEx3().PZ 43B8B6B253374CD6106157FD3856875A

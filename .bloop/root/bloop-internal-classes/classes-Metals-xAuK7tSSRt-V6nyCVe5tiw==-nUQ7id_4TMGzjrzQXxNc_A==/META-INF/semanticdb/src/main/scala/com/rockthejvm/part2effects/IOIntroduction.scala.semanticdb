@@ -1,0 +1,471 @@
+
+§»?src/main/scala/com/rockthejvm/part2effects/IOIntroduction.scala*D
++com/rockthejvm/part2effects/IOIntroduction.
+ *IOIntroduction€*L
+6com/rockthejvm/part2effects/IOIntroduction.ourFirstIO. €*
+ourFirstIO€*L
+6com/rockthejvm/part2effects/IOIntroduction.aDelayedIO. €*
+aDelayedIO€*R
+9com/rockthejvm/part2effects/IOIntroduction.aDelayedIO_v2. €*aDelayedIO_v2€*b
+Acom/rockthejvm/part2effects/IOIntroduction.improvedMeaningOfLife. €*improvedMeaningOfLife€*`
+@com/rockthejvm/part2effects/IOIntroduction.printedMeaningOfLife. €*printedMeaningOfLife€*
+local0*mol€*O
+:com/rockthejvm/part2effects/IOIntroduction.smallProgram().*smallProgram€*
+local1*line1€*
+local2*line2€*
+local3*x$1€*b
+Acom/rockthejvm/part2effects/IOIntroduction.combinedMeaningOfLife. €*combinedMeaningOfLife€*U
+=com/rockthejvm/part2effects/IOIntroduction.smallProgram_v2().*smallProgram_v2€*
+local4*x€*W
+>com/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().*sequenceTakeLast€*K
+Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().[A]	*A€*K
+Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().[B]	*B€*O
+Ccom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().(ioa)*ioa€*O
+Ccom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().(iob)*iob€*]
+Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().*sequenceTakeLast_v2€*N
+Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().[A]	*A€*N
+Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().[B]	*B€*R
+Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().(ioa)*ioa€*R
+Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().(iob)*iob€*]
+Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().*sequenceTakeLast_v3€*N
+Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().[A]	*A€*N
+Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().[B]	*B€*R
+Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().(ioa)*ioa€*R
+Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().(iob)*iob€*Y
+?com/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().*sequenceTakeFirst€*L
+Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().[A]	*A€*L
+Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().[B]	*B€*P
+Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().(ioa)*ioa€*P
+Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().(iob)*iob€*
+local5*a€*_
+Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().*sequenceTakeFirst_v2€*O
+Ecom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().[A]	*A€*O
+Ecom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().[B]	*B€*S
+Gcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().(ioa)*ioa€*S
+Gcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().(iob)*iob€*E
+5com/rockthejvm/part2effects/IOIntroduction.forever().*forever€*B
+8com/rockthejvm/part2effects/IOIntroduction.forever().[A]	*A€*D
+9com/rockthejvm/part2effects/IOIntroduction.forever().(io)*io€*K
+8com/rockthejvm/part2effects/IOIntroduction.forever_v2().*
+forever_v2€*E
+;com/rockthejvm/part2effects/IOIntroduction.forever_v2().[A]	*A€*G
+<com/rockthejvm/part2effects/IOIntroduction.forever_v2().(io)*io€*K
+8com/rockthejvm/part2effects/IOIntroduction.forever_v3().*
+forever_v3€*E
+;com/rockthejvm/part2effects/IOIntroduction.forever_v3().[A]	*A€*G
+<com/rockthejvm/part2effects/IOIntroduction.forever_v3().(io)*io€*K
+8com/rockthejvm/part2effects/IOIntroduction.forever_v4().*
+forever_v4€*E
+;com/rockthejvm/part2effects/IOIntroduction.forever_v4().[A]	*A€*G
+<com/rockthejvm/part2effects/IOIntroduction.forever_v4().(io)*io€*E
+5com/rockthejvm/part2effects/IOIntroduction.convert().*convert€*B
+8com/rockthejvm/part2effects/IOIntroduction.convert().[A]	*A€*B
+8com/rockthejvm/part2effects/IOIntroduction.convert().[B]	*B€*F
+:com/rockthejvm/part2effects/IOIntroduction.convert().(ioa)*ioa€*J
+<com/rockthejvm/part2effects/IOIntroduction.convert().(value)*value€*K
+8com/rockthejvm/part2effects/IOIntroduction.convert_v2().*
+convert_v2€*E
+;com/rockthejvm/part2effects/IOIntroduction.convert_v2().[A]	*A€*E
+;com/rockthejvm/part2effects/IOIntroduction.convert_v2().[B]	*B€*I
+=com/rockthejvm/part2effects/IOIntroduction.convert_v2().(ioa)*ioa€*M
+?com/rockthejvm/part2effects/IOIntroduction.convert_v2().(value)*value€*C
+4com/rockthejvm/part2effects/IOIntroduction.asUnit().*asUnit€*A
+7com/rockthejvm/part2effects/IOIntroduction.asUnit().[A]	*A€*E
+9com/rockthejvm/part2effects/IOIntroduction.asUnit().(ioa)*ioa€*I
+7com/rockthejvm/part2effects/IOIntroduction.asUnit_v2().*	asUnit_v2€*D
+:com/rockthejvm/part2effects/IOIntroduction.asUnit_v2().[A]	*A€*H
+<com/rockthejvm/part2effects/IOIntroduction.asUnit_v2().(ioa)*ioa€*I
+7com/rockthejvm/part2effects/IOIntroduction.asUnit_v3().*	asUnit_v3€*D
+:com/rockthejvm/part2effects/IOIntroduction.asUnit_v3().[A]	*A€*H
+<com/rockthejvm/part2effects/IOIntroduction.asUnit_v3().(ioa)*ioa€*=
+1com/rockthejvm/part2effects/IOIntroduction.sum().*sum€*>
+4com/rockthejvm/part2effects/IOIntroduction.sum().(n)*n€*A
+3com/rockthejvm/part2effects/IOIntroduction.sumIO().*sumIO€*@
+6com/rockthejvm/part2effects/IOIntroduction.sumIO().(n)*n€*
+local6*
+lastNumber€*
+local7*prevSum€*I
+7com/rockthejvm/part2effects/IOIntroduction.fibonacci().*	fibonacci€*D
+:com/rockthejvm/part2effects/IOIntroduction.fibonacci().(n)*n€*
+local8*last€*
+local9*prev€*?
+2com/rockthejvm/part2effects/IOIntroduction.main().*main€*E
+8com/rockthejvm/part2effects/IOIntroduction.main().(args)*args€*
+local10*i€2&
+ #com/rockthejvm/part2effects/2
+ com/rockthejvm/2
+ com/2
+ cats/effect/IO.2
+ cats/effect/IO#2
+ cats/effect/2
+ cats/2
+ scala/io/StdIn.2
+ scala/io/StdIn#2
+ 	scala/io/2
+ scala/29
+ +com/rockthejvm/part2effects/IOIntroduction.2D
+		 6com/rockthejvm/part2effects/IOIntroduction.ourFirstIO.2
+		 cats/effect/IO#2
+		 
+scala/Int#2$
+		 #cats/effect/IO.pure().2
+		 cats/effect/IO.2D
+
+
+ 6com/rockthejvm/part2effects/IOIntroduction.aDelayedIO.2
+
+
+ cats/effect/IO#2
+
+
+ 
+scala/Int#2%
+
+
+ $cats/effect/IO.delay().2
+
+
+ cats/effect/IO.2'
+ scala/Predef.println(+1).2G
+ 9com/rockthejvm/part2effects/IOIntroduction.aDelayedIO_v2.2
+ cats/effect/IO#2
+ 
+scala/Int#2%
+! !cats/effect/IO.apply().2
+ !cats/effect/IO.2'
+ scala/Predef.println(+1).2O
+ Acom/rockthejvm/part2effects/IOIntroduction.improvedMeaningOfLife.2#
+) ,cats/effect/IO#map().2D
+ (6com/rockthejvm/part2effects/IOIntroduction.ourFirstIO.2 
+/ 0scala/Int#`*`(+3).2N
+ @com/rockthejvm/part2effects/IOIntroduction.printedMeaningOfLife.2'
+( /cats/effect/IO#flatMap().2D
+ '6com/rockthejvm/part2effects/IOIntroduction.ourFirstIO.2
+0 3local02%
+: ?cats/effect/IO.delay().2
+7 9cats/effect/IO.2'
+@ Gscala/Predef.println(+1).2
+H Klocal02H
+ :com/rockthejvm/part2effects/IOIntroduction.smallProgram().2
+ cats/effect/IO#2
+ scala/Unit#2'
+! !cats/effect/IO#flatMap().2%
+ cats/effect/IO.apply().2
+ cats/effect/IO.2(
+ scala/io/StdIn#readLine().2
+ scala/io/StdIn.2
+ 	local12'
+! !cats/effect/IO#flatMap().2%
+ cats/effect/IO.apply().2
+ cats/effect/IO.2(
+ scala/io/StdIn#readLine().2
+ scala/io/StdIn.2
+ 	local22#
+) )cats/effect/IO#map().2%
+ cats/effect/IO.delay().2
+	 cats/effect/IO.2'
+ scala/Predef.println(+1).2%
+  !java/lang/String#`+`().2
+ local12
+" 'local22
+ local32(
+ cats/syntax/package.apply.2
+ cats/syntax/2
+	 cats/2O
+   Acom/rockthejvm/part2effects/IOIntroduction.combinedMeaningOfLife.2
+   cats/effect/IO#2
+    #
+scala/Int#26
+ K  O(cats/syntax/Tuple2SemigroupalOps#mapN().2O
+ '  'Acats/syntax/TupleSemigroupalSyntax#catsSyntaxTuple2Semigroupal().2#
+ (  (scala/Tuple2.apply().2D
+ (  26com/rockthejvm/part2effects/IOIntroduction.ourFirstIO.2O
+ 4  IAcom/rockthejvm/part2effects/IOIntroduction.improvedMeaningOfLife.2 
+ R  Sscala/Int#`+`(+4).2*
+ V  Vcats/effect/IO.asyncForIO().2K
+!! =com/rockthejvm/part2effects/IOIntroduction.smallProgram_v2().2
+!! cats/effect/IO#2
+!!  scala/Unit#2#
+"=" @cats/effect/IO#map().26
+"1" 5(cats/syntax/Tuple2SemigroupalOps#mapN().2O
+"" Acats/syntax/TupleSemigroupalSyntax#catsSyntaxTuple2Semigroupal().2#
+"" scala/Tuple2.apply().2%
+"" cats/effect/IO.apply().2
+"" cats/effect/IO.2(
+"" scala/io/StdIn#readLine().2
+"" scala/io/StdIn.2%
+"" cats/effect/IO.apply().2
+"" cats/effect/IO.2(
+"$" ,scala/io/StdIn#readLine().2
+"" #scala/io/StdIn.2%
+"8" 9java/lang/String#`+`().2*
+"<" <cats/effect/IO.asyncForIO().2'
+"A" Hscala/Predef.println(+1).2
+"A" Alocal42L
+++ >com/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().2O
+++ Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().[A]2O
+++ Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().[B]2Q
+++  Ccom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().(ioa)2
++"+ $cats/effect/IO#2O
++%+ &Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().[A]2Q
++)+ ,Ccom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().(iob)2
++.+ 0cats/effect/IO#2O
++1+ 2Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().[B]2
++6+ 8cats/effect/IO#2O
++9+ :Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().[B]2'
+,, cats/effect/IO#flatMap().2Q
+,, Ccom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().(ioa)2Q
+,, Ccom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast().(iob)2O
+.. Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().2R
+.. Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().[A]2R
+.. Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().[B]2T
+. . #Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().(ioa)2
+.%. 'cats/effect/IO#2R
+.(. )Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().[A]2T
+.,. /Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().(iob)2
+.1. 3cats/effect/IO#2R
+.4. 5Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().[B]2
+.9. ;cats/effect/IO#2R
+.<. =Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().[B]2$
+// 
+cats/effect/IO#`*>`().2T
+// Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().(ioa)2T
+// Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v2().(iob)2O
+11 Acom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().2R
+11 Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().[A]2R
+11 Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().[B]2T
+1 1 #Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().(ioa)2
+1%1 'cats/effect/IO#2R
+1(1 )Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().[A]2T
+1,1 /Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().(iob)2
+111 3cats/effect/IO#2R
+141 5Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().[B]2
+191 ;cats/effect/IO#2R
+1<1 =Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().[B]2$
+22 
+cats/effect/IO#`>>`().2T
+22 Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().(ioa)2T
+22 Fcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeLast_v3().(iob)2M
+66 ?com/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().2P
+66 Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().[A]2P
+66 Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().[B]2R
+66 !Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().(ioa)2
+6#6 %cats/effect/IO#2P
+6&6 'Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().[A]2R
+6*6 -Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().(iob)2
+6/6 1cats/effect/IO#2P
+626 3Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().[B]2
+676 9cats/effect/IO#2P
+6:6 ;Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().[A]2'
+77 cats/effect/IO#flatMap().2R
+77 Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().(ioa)2
+77 local52#
+77 cats/effect/IO#map().2R
+77 Dcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst().(iob)2
+7"7 #local52P
+99 Bcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().2S
+99 Ecom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().[A]2S
+99 Ecom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().[B]2U
+9!9 $Gcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().(ioa)2
+9&9 (cats/effect/IO#2S
+9)9 *Ecom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().[A]2U
+9-9 0Gcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().(iob)2
+929 4cats/effect/IO#2S
+959 6Ecom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().[B]2
+9:9 <cats/effect/IO#2S
+9=9 >Ecom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().[A]2$
+:: 
+cats/effect/IO#`<*`().2U
+:: Gcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().(ioa)2U
+:: Gcom/rockthejvm/part2effects/IOIntroduction.sequenceTakeFirst_v2().(iob)2C
+>> 5com/rockthejvm/part2effects/IOIntroduction.forever().2F
+>> 8com/rockthejvm/part2effects/IOIntroduction.forever().[A]2G
+>> 9com/rockthejvm/part2effects/IOIntroduction.forever().(io)2
+>> cats/effect/IO#2F
+>> 8com/rockthejvm/part2effects/IOIntroduction.forever().[A]2
+>> cats/effect/IO#2F
+> > !8com/rockthejvm/part2effects/IOIntroduction.forever().[A]2'
+?? cats/effect/IO#flatMap().2G
+?? 9com/rockthejvm/part2effects/IOIntroduction.forever().(io)2C
+?? 5com/rockthejvm/part2effects/IOIntroduction.forever().2G
+?? 9com/rockthejvm/part2effects/IOIntroduction.forever().(io)2F
+AA 8com/rockthejvm/part2effects/IOIntroduction.forever_v2().2I
+AA ;com/rockthejvm/part2effects/IOIntroduction.forever_v2().[A]2J
+AA <com/rockthejvm/part2effects/IOIntroduction.forever_v2().(io)2
+AA cats/effect/IO#2I
+AA ;com/rockthejvm/part2effects/IOIntroduction.forever_v2().[A]2
+A A "cats/effect/IO#2I
+A#A $;com/rockthejvm/part2effects/IOIntroduction.forever_v2().[A]2$
+BB 	cats/effect/IO#`>>`().2J
+BB <com/rockthejvm/part2effects/IOIntroduction.forever_v2().(io)2F
+B
+B 8com/rockthejvm/part2effects/IOIntroduction.forever_v2().2J
+BB <com/rockthejvm/part2effects/IOIntroduction.forever_v2().(io)2F
+DD 8com/rockthejvm/part2effects/IOIntroduction.forever_v3().2I
+DD ;com/rockthejvm/part2effects/IOIntroduction.forever_v3().[A]2J
+DD <com/rockthejvm/part2effects/IOIntroduction.forever_v3().(io)2
+DD cats/effect/IO#2I
+DD ;com/rockthejvm/part2effects/IOIntroduction.forever_v3().[A]2
+D D "cats/effect/IO#2I
+D#D $;com/rockthejvm/part2effects/IOIntroduction.forever_v3().[A]2$
+EE 	cats/effect/IO#`*>`().2J
+EE <com/rockthejvm/part2effects/IOIntroduction.forever_v3().(io)2F
+E
+E 8com/rockthejvm/part2effects/IOIntroduction.forever_v3().2J
+EE <com/rockthejvm/part2effects/IOIntroduction.forever_v3().(io)2F
+GG 8com/rockthejvm/part2effects/IOIntroduction.forever_v4().2I
+GG ;com/rockthejvm/part2effects/IOIntroduction.forever_v4().[A]2J
+GG <com/rockthejvm/part2effects/IOIntroduction.forever_v4().(io)2
+GG cats/effect/IO#2I
+GG ;com/rockthejvm/part2effects/IOIntroduction.forever_v4().[A]2
+G G "cats/effect/IO#2I
+G#G $;com/rockthejvm/part2effects/IOIntroduction.forever_v4().[A]2(
+HH cats/effect/IO#foreverM().2J
+HH <com/rockthejvm/part2effects/IOIntroduction.forever_v4().(io)2C
+LL 5com/rockthejvm/part2effects/IOIntroduction.convert().2F
+LL 8com/rockthejvm/part2effects/IOIntroduction.convert().[A]2F
+LL 8com/rockthejvm/part2effects/IOIntroduction.convert().[B]2H
+LL :com/rockthejvm/part2effects/IOIntroduction.convert().(ioa)2
+LL cats/effect/IO#2F
+LL 8com/rockthejvm/part2effects/IOIntroduction.convert().[A]2J
+L L %<com/rockthejvm/part2effects/IOIntroduction.convert().(value)2F
+L'L (8com/rockthejvm/part2effects/IOIntroduction.convert().[B]2
+L+L -cats/effect/IO#2F
+L.L /8com/rockthejvm/part2effects/IOIntroduction.convert().[B]2#
+MM cats/effect/IO#map().2H
+MM :com/rockthejvm/part2effects/IOIntroduction.convert().(ioa)2J
+MM <com/rockthejvm/part2effects/IOIntroduction.convert().(value)2F
+OO 8com/rockthejvm/part2effects/IOIntroduction.convert_v2().2I
+OO ;com/rockthejvm/part2effects/IOIntroduction.convert_v2().[A]2I
+OO ;com/rockthejvm/part2effects/IOIntroduction.convert_v2().[B]2K
+OO =com/rockthejvm/part2effects/IOIntroduction.convert_v2().(ioa)2
+OO cats/effect/IO#2I
+OO  ;com/rockthejvm/part2effects/IOIntroduction.convert_v2().[A]2M
+O#O (?com/rockthejvm/part2effects/IOIntroduction.convert_v2().(value)2I
+O*O +;com/rockthejvm/part2effects/IOIntroduction.convert_v2().[B]2
+O.O 0cats/effect/IO#2I
+O1O 2;com/rockthejvm/part2effects/IOIntroduction.convert_v2().[B]2"
+PP 
+cats/effect/IO#as().2K
+PP =com/rockthejvm/part2effects/IOIntroduction.convert_v2().(ioa)2M
+PP ?com/rockthejvm/part2effects/IOIntroduction.convert_v2().(value)2B
+SS 4com/rockthejvm/part2effects/IOIntroduction.asUnit().2E
+SS 7com/rockthejvm/part2effects/IOIntroduction.asUnit().[A]2G
+SS 9com/rockthejvm/part2effects/IOIntroduction.asUnit().(ioa)2
+SS cats/effect/IO#2E
+SS 7com/rockthejvm/part2effects/IOIntroduction.asUnit().[A]2
+SS cats/effect/IO#2
+S S $scala/Unit#2#
+TT cats/effect/IO#map().2G
+TT 9com/rockthejvm/part2effects/IOIntroduction.asUnit().(ioa)2E
+VV 7com/rockthejvm/part2effects/IOIntroduction.asUnit_v2().2H
+VV :com/rockthejvm/part2effects/IOIntroduction.asUnit_v2().[A]2J
+VV <com/rockthejvm/part2effects/IOIntroduction.asUnit_v2().(ioa)2
+VV cats/effect/IO#2H
+VV :com/rockthejvm/part2effects/IOIntroduction.asUnit_v2().[A]2
+V V "cats/effect/IO#2
+V#V 'scala/Unit#2"
+WW 
+cats/effect/IO#as().2J
+WW <com/rockthejvm/part2effects/IOIntroduction.asUnit_v2().(ioa)2E
+YY 7com/rockthejvm/part2effects/IOIntroduction.asUnit_v3().2H
+YY :com/rockthejvm/part2effects/IOIntroduction.asUnit_v3().[A]2J
+YY <com/rockthejvm/part2effects/IOIntroduction.asUnit_v3().(ioa)2
+YY cats/effect/IO#2H
+YY :com/rockthejvm/part2effects/IOIntroduction.asUnit_v3().[A]2
+Y Y "cats/effect/IO#2
+Y#Y 'scala/Unit#2$
+ZZ cats/effect/IO#void().2J
+ZZ <com/rockthejvm/part2effects/IOIntroduction.asUnit_v3().(ioa)2?
+]] 	1com/rockthejvm/part2effects/IOIntroduction.sum().2B
+]
+] 4com/rockthejvm/part2effects/IOIntroduction.sum().(n)2
+]] 
+scala/Int#2
+]] 
+scala/Int#2!
+^
+^ scala/Int#`<=`(+3).2B
+^^ 	4com/rockthejvm/part2effects/IOIntroduction.sum().(n)2 
+__ scala/Int#`+`(+4).2B
+_	_ 
+4com/rockthejvm/part2effects/IOIntroduction.sum().(n)2?
+__ 1com/rockthejvm/part2effects/IOIntroduction.sum().2 
+__ scala/Int#`-`(+3).2B
+__ 4com/rockthejvm/part2effects/IOIntroduction.sum().(n)2A
+aa 3com/rockthejvm/part2effects/IOIntroduction.sumIO().2D
+aa 6com/rockthejvm/part2effects/IOIntroduction.sumIO().(n)2
+aa 
+scala/Int#2
+aa cats/effect/IO#2
+aa 
+scala/Int#2!
+b
+b scala/Int#`<=`(+3).2D
+bb 	6com/rockthejvm/part2effects/IOIntroduction.sumIO().(n)2%
+bb cats/effect/IO.apply().2
+bb cats/effect/IO.2'
+dd cats/effect/IO#flatMap().2%
+dd cats/effect/IO.apply().2
+dd cats/effect/IO.2D
+dd 6com/rockthejvm/part2effects/IOIntroduction.sumIO().(n)2
+dd local62#
+ee cats/effect/IO#map().2A
+ee 3com/rockthejvm/part2effects/IOIntroduction.sumIO().2 
+ee scala/Int#`-`(+3).2D
+ee 6com/rockthejvm/part2effects/IOIntroduction.sumIO().(n)2
+ee local72 
+ff scala/Int#`+`(+4).2
+ff local72
+ff  local62E
+jj 7com/rockthejvm/part2effects/IOIntroduction.fibonacci().2H
+jj :com/rockthejvm/part2effects/IOIntroduction.fibonacci().(n)2
+jj 
+scala/Int#2
+jj cats/effect/IO#2#
+jj "scala/package.BigInt#2 
+k
+k scala/Int#`<`(+3).2H
+kk 	:com/rockthejvm/part2effects/IOIntroduction.fibonacci().(n)2%
+kk cats/effect/IO.apply().2
+kk cats/effect/IO.2-
+kk scala/math/BigInt.int2bigInt().2'
+m(m (cats/effect/IO#flatMap().2%
+mm cats/effect/IO.defer().2
+mm cats/effect/IO.2E
+mm  7com/rockthejvm/part2effects/IOIntroduction.fibonacci().2 
+m#m $scala/Int#`-`(+3).2H
+m!m ":com/rockthejvm/part2effects/IOIntroduction.fibonacci().(n)2
+mm 
+local82#
+n(n (cats/effect/IO#map().2%
+nn cats/effect/IO.defer().2
+nn cats/effect/IO.2E
+nn  7com/rockthejvm/part2effects/IOIntroduction.fibonacci().2 
+n#n $scala/Int#`-`(+3).2H
+n!n ":com/rockthejvm/part2effects/IOIntroduction.fibonacci().(n)2
+nn 
+local92&
+oo scala/math/BigInt#`+`().2
+oo local82
+oo local92@
+qq 
+2com/rockthejvm/part2effects/IOIntroduction.main().2F
+qq 8com/rockthejvm/part2effects/IOIntroduction.main().(args)2
+qq scala/Array#2"
+qq scala/Predef.String#2
+q!q %scala/Unit#22
+r(r .$cats/effect/unsafe/implicits.global.2+
+rr 'cats/effect/unsafe/implicits.2!
+rr cats/effect/unsafe/2
+rr cats/effect/2
+rr cats/29
+tt +scala/collection/immutable/Range#foreach().2)
+tt 	scala/runtime/RichInt#to().26
+tt (scala/LowPriorityImplicits#intWrapper().2
+tt local102'
+tt #scala/Predef.println(+1).25
+t1t >'cats/effect/IOPlatform#unsafeRunSync().2E
+t$t -7com/rockthejvm/part2effects/IOIntroduction.fibonacci().2
+t.t /local1022
+t@t @$cats/effect/unsafe/implicits.global.PZ 9B9C1B085AA3692DAEBB5E489511C978

@@ -1,0 +1,594 @@
+
+ˆïLsrc/main/scala/com/rockthejvm/part5polymorphic/PolymorphicCoordination.scala*Z
+8com/rockthejvm/part5polymorphic/PolymorphicCoordination.
+ *PolymorphicCoordination€*Z
+Ecom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#*MyConcurrent€*b
+Pcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#`<init>`(). €@*<init>€*R
+Hcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#[F]	*F€*Y
+Kcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#ref(). *ref€*X
+Ncom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#ref().[A]	*A€*X
+Ncom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#ref().(a)*a€*c
+Pcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#deferred(). *deferred€*]
+Scom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#deferred().[A]	*A€*]
+Ecom/rockthejvm/part5polymorphic/PolymorphicCoordination.concurrentIO. €*concurrentIO€*W
+Bcom/rockthejvm/part5polymorphic/PolymorphicCoordination.aDeferred. €*	aDeferred€*]
+Ecom/rockthejvm/part5polymorphic/PolymorphicCoordination.aDeferred_v2. €*aDeferred_v2€*M
+=com/rockthejvm/part5polymorphic/PolymorphicCoordination.aRef. €*aRef€*V
+Dcom/rockthejvm/part5polymorphic/PolymorphicCoordination.eggBoiler().*	eggBoiler€*#
+local0*eggReadyNotification€*
+local1*signal€*
+local2*x$1€*
+local3*x$1€*
+local4*x$1€*
+local5*tickingClock€*
+local6*counter€*
+local7*signal€*
+local8*x$1€*
+local9*count€*
+local10*x$1€*
+local11*x$1€*
+local12*counter€*
+local13*signal€*
+local14*notificationFib€*
+local15*clock€*
+local16*x$1€*
+local17*x$1€*b
+Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().*unsafeSleepDupe€*W
+Mcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().[F]	*F€*W
+Mcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().[E]	*E€*e
+Tcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().(duration)*duration€*[
+Ncom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().(mc)  *mc€*l
+Ocom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().*polymorphicEggBoiler€*\
+Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]	*F€*p
+[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)  *
+concurrent€*$
+local18*eggReadyNotification€*
+local19*signal€*
+local20*x$1€*
+local21*x$1€*
+local22*x$1€*
+local23*tickingClock€*
+local24*counter€*
+local25*signal€*
+local26*x$1€*
+local27*count€*
+local28*x$1€*
+local29*x$1€*
+local30*counter€*
+local31*signal€*
+local32*notificationFib€*
+local33*clock€*
+local34*x$1€*
+local35*x$1€*V
+Ccom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#*
+RaceResult€*P
+Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[F]	*F€*P
+Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[A]	*A€*P
+Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[B]	*B€*\
+Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#*EitherOutcome€*S
+Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[F]	*F€*S
+Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[A]	*A€*S
+Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[B]	*B€*Z
+Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().*ourRacePair€*S
+Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[F]	*F€*S
+Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[A]	*A€*S
+Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[B]	*B€*U
+Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(fa)*fa€*U
+Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(fb)*fb€*g
+Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)  *
+concurrent€*
+local36*poll€*
+local37*signal€*
+local38*outcomeA€*
+local39*fiba€*
+local40*outcomeB€*
+local41*fibb€*
+local42*
+cancelFibA€*
+local43*
+cancelFibB€*
+local44*x$1€*
+local45*x$1€*
+local46*result€*
+local47 €*outcomeA€*
+local48 €*outcomeB€*J
+>com/rockthejvm/part5polymorphic/PolymorphicCoordination.run().*run€2*
+ ' com/rockthejvm/part5polymorphic/2
+ com/rockthejvm/2
+ com/2.
+  cats/effect/package.MonadCancel.2-
+! +cats/effect/package.Concurrent.2
+- /cats/effect/IO.2
+- /cats/effect/IO#2 
+1 6cats/effect/IOApp.2 
+1 6cats/effect/IOApp#2&
+8 ;cats/effect/package.Ref.2*
+= Dcats/effect/package.Outcome.2
+ cats/effect/2
+ cats/2*
+ #cats/effect/kernel/Deferred.2*
+ #cats/effect/kernel/Deferred#2/
+% *!cats/effect/kernel/package.Spawn.2!
+ cats/effect/kernel/2
+ cats/effect/2
+ cats/2F
+ 8com/rockthejvm/part5polymorphic/PolymorphicCoordination.2'
+- 3cats/effect/IOApp.Simple#2 
+' ,cats/effect/IOApp.2S
+ Ecom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#2^
+ Pcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#`<init>`().2/
+# (!cats/effect/kernel/package.Spawn#2V
+) *Hcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#[F]2V
+ Hcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#[F]2Y
+		 Kcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#ref().2\
+		 Ncom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#ref().[A]2\
+		 Ncom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#ref().(a)2\
+		 Ncom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#ref().[A]2V
+		 Hcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#[F]2&
+		 cats/effect/package.Ref#2V
+		 Hcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#[F]2\
+		  Ncom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#ref().[A]2^
+
+
+ Pcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#deferred().2a
+
+
+ Scom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#deferred().[A]2V
+
+
+ Hcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#[F]2*
+
+
+ cats/effect/kernel/Deferred#2V
+
+ 
+ !Hcom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#[F]2a
+
+#
+ $Scom/rockthejvm/part5polymorphic/PolymorphicCoordination.MyConcurrent#deferred().[A]2S
+ Ecom/rockthejvm/part5polymorphic/PolymorphicCoordination.concurrentIO.29
+ +cats/effect/kernel/GenConcurrent.apply(+1).2-
+ cats/effect/package.Concurrent.2*
+# #cats/effect/IO.asyncForIO().20
+# #"scala/DummyImplicit.dummyImplicit.2P
+ Bcom/rockthejvm/part5polymorphic/PolymorphicCoordination.aDeferred.22
+ $cats/effect/kernel/Deferred.apply().2*
+ cats/effect/kernel/Deferred.2
+ "
+scala/Int#2*
+# #cats/effect/IO.asyncForIO().2S
+ Ecom/rockthejvm/part5polymorphic/PolymorphicCoordination.aDeferred_v2.2:
+" *,cats/effect/kernel/GenConcurrent#deferred().2S
+ !Ecom/rockthejvm/part5polymorphic/PolymorphicCoordination.concurrentIO.2
++ .
+scala/Int#2K
+ 
+=com/rockthejvm/part5polymorphic/PolymorphicCoordination.aRef.25
+ 'cats/effect/kernel/GenConcurrent#ref().2S
+ Ecom/rockthejvm/part5polymorphic/PolymorphicCoordination.concurrentIO.2+
+ %com/rockthejvm/utils/general/2#
+ com/rockthejvm/utils/2
+ com/rockthejvm/2
+	 com/2(
+ "scala/concurrent/duration/2
+ scala/concurrent/2
+	 scala/2R
+ Dcom/rockthejvm/part5polymorphic/PolymorphicCoordination.eggBoiler().2
+ cats/effect/IO#2
+ scala/Unit#2
+ local02
+ #local12*
+% -cats/effect/kernel/Deferred#2
+2 6scala/Unit#2'
+B Bcats/effect/IO#flatMap().2A
+= B3com/rockthejvm/utils/general/Utils$package.debug().2%
+ cats/effect/IO.apply().2
+ cats/effect/IO.2*
+B Bcats/effect/IO.asyncForIO().2
+ local22'
+ cats/effect/IO#flatMap().26
+ (cats/effect/kernel/DeferredSource#get().2
+ local12
+ local32#
+! !cats/effect/IO#map().2A
+ !3com/rockthejvm/utils/general/Utils$package.debug().2%
+ cats/effect/IO.apply().2
+ cats/effect/IO.2*
+! !cats/effect/IO.asyncForIO().2
+ local42
+ local52
+ local62&
+ !cats/effect/package.Ref#2
+& )
+scala/Int#2
+, 2local72*
+4 <cats/effect/kernel/Deferred#2
+A Escala/Unit#2
+I Kcats/effect/IO#2
+L Pscala/Unit#2'
+ cats/effect/IO#flatMap().2%
+ cats/effect/IO.sleep().2
+ cats/effect/IO.2E
+ 7scala/concurrent/duration/DurationConversions#second().2>
+ 0scala/concurrent/duration/package.DurationInt().2
+ local82'
+ *  *cats/effect/IO#flatMap().24
+   #&cats/effect/kernel/Ref#updateAndGet().2
+   local62 
+ &  'scala/Int#`+`(+4).2
+   local92'
+!! cats/effect/IO#flatMap().2A
+!! 3com/rockthejvm/utils/general/Utils$package.debug().2%
+!! cats/effect/IO.apply().2
+!! cats/effect/IO.2
+!! local92*
+!! cats/effect/IO.asyncForIO().2
+!! local102#
+"R" Rcats/effect/IO#map().2!
+"" scala/Int#`>=`(+3).2
+"" local929
+"#" ++cats/effect/kernel/DeferredSink#complete().2
+"" "local72
+"5" Alocal52
+"B" Ilocal62
+"K" Qlocal72
+"" local112'
+&& cats/effect/IO#flatMap().28
+&& *cats/effect/kernel/Ref.ApplyBuilders#of().2-
+&& cats/effect/kernel/Ref.apply().2&
+&& cats/effect/package.Ref.2H
+&& :cats/effect/kernel/Ref.MakeInstances#concurrentInstance().2*
+&& cats/effect/IO.asyncForIO().2
+&& local122'
+'"' "cats/effect/IO#flatMap().22
+'' $cats/effect/kernel/Deferred.apply().2*
+'' cats/effect/kernel/Deferred.2
+'' !scala/Unit#2*
+'"' "cats/effect/IO.asyncForIO().2
+'' local132'
+(;( ;cats/effect/IO#flatMap().2%
+(6( ;cats/effect/IO#start().2
+(( -local02
+(.( 4local132
+(( local142'
+)2) 2cats/effect/IO#flatMap().2%
+)-) 2cats/effect/IO#start().2
+)) local52
+)) #local122
+)%) +local132
+)) local152'
+** cats/effect/IO#flatMap().2.
+**  cats/effect/kernel/Fiber#join().2
+** local142
+** local162#
+++ cats/effect/IO#map().2.
+++  cats/effect/kernel/Fiber#join().2
+++ local152
+++ local172*
+// cats/syntax/package.flatMap.2
+// cats/syntax/2
+/	/ cats/2*
+00 cats/syntax/package.functor.2
+00 cats/syntax/2
+0	0 cats/2/
+11 !!cats/effect/syntax/package.spawn.2!
+11 cats/effect/syntax/2
+11 cats/effect/2
+1	1 cats/2X
+44 Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().2[
+44 Mcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().[F]2[
+44 Mcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().[E]2b
+44 'Tcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().(duration)27
+4)4 7)scala/concurrent/duration/FiniteDuration#2\
+4?4 ANcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().(mc)2.
+4C4 N cats/effect/package.MonadCancel#2[
+4O4 PMcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().[F]2[
+4R4 SMcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().[E]2[
+4W4 XMcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().[F]2
+4Y4 ]scala/Unit#2&
+55 cats/Applicative#pure().2\
+55 Ncom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().(mc)2'
+55 java/lang/Thread#sleep().2
+55 java/lang/Thread#2B
+5"5 *4scala/concurrent/duration/FiniteDuration#toMillis().2b
+55 !Tcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().(duration)2]
+77 Ocom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().2`
+77 Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]2i
+7'7 1[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2-
+737 =cats/effect/package.Concurrent#2`
+7>7 ?Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]2`
+7C7 DRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]2
+7E7 Iscala/Unit#2
+88 local182
+88 #local192*
+8%8 -cats/effect/kernel/Deferred#2`
+8.8 /Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]2
+818 5scala/Unit#2)
+9O9 Ocats/FlatMap.Ops#flatMap().27
+99 )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2A
+9J9 O3com/rockthejvm/utils/general/Utils$package.debug().2&
+99 cats/Applicative#pure().2i
+99 [com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2i
+9O9 O[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+99 local202)
+:: cats/FlatMap.Ops#flatMap().27
+:: )cats/FlatMap.ToFlatMapOps#toFlatMapOps().26
+:: (cats/effect/kernel/DeferredSource#get().2
+:: local192i
+:: [com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+:: local212%
+;.; .cats/Functor.Ops#map().27
+;; )cats/Functor.ToFunctorOps#toFunctorOps().2A
+;); .3com/rockthejvm/utils/general/Utils$package.debug().2&
+;; cats/Applicative#pure().2i
+;; [com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2i
+;.; .[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+;; local222
+>> local232
+>> local242&
+>> !cats/effect/package.Ref#2`
+>"> #Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]2
+>%> (
+scala/Int#2
+>+> 1local252*
+>3> ;cats/effect/kernel/Deferred#2`
+><> =Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]2
+>?> Cscala/Unit#2`
+>G> HRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]2
+>I> Mscala/Unit#2)
+?2? 2cats/FlatMap.Ops#flatMap().27
+?? )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2X
+?? Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.unsafeSleepDupe().2`
+?? Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().[F]2&
+?? 'scala/package.Throwable#2E
+?+? 17scala/concurrent/duration/DurationConversions#second().2>
+?)? )0scala/concurrent/duration/package.DurationInt().2i
+?2? 2[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+?? local262)
+@*@ *cats/FlatMap.Ops#flatMap().27
+@@ )cats/FlatMap.ToFlatMapOps#toFlatMapOps().24
+@@ #&cats/effect/kernel/Ref#updateAndGet().2
+@@ local242 
+@&@ 'scala/Int#`+`(+4).2i
+@*@ *[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+@@ local272)
+A'A 'cats/FlatMap.Ops#flatMap().27
+AA )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2A
+A"A '3com/rockthejvm/utils/general/Utils$package.debug().2&
+AA cats/Applicative#pure().2i
+AA [com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+AA  local272i
+A'A '[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+AA local282%
+BWB Wcats/Functor.Ops#map().27
+BB )cats/Functor.ToFunctorOps#toFunctorOps().2!
+BB scala/Int#`>=`(+3).2
+BB local272&
+B0B 4cats/Functor.Ops#void().27
+BB )cats/Functor.ToFunctorOps#toFunctorOps().29
+B#B ++cats/effect/kernel/DeferredSink#complete().2
+BB "local252i
+B/B /[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+B:B Flocal232
+BGB Nlocal242
+BPB Vlocal252i
+BWB W[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+BB local292)
+F"F "cats/FlatMap.Ops#flatMap().27
+FF )cats/FlatMap.ToFlatMapOps#toFlatMapOps().25
+FF 'cats/effect/kernel/GenConcurrent#ref().2i
+FF [com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2i
+F"F "[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+FF local302)
+G)G )cats/FlatMap.Ops#flatMap().27
+GG )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2:
+GG #,cats/effect/kernel/GenConcurrent#deferred().2i
+GG [com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+G$G (scala/Unit#2i
+G)G )[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+GG local312)
+H;H ;cats/FlatMap.Ops#flatMap().27
+HH )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2<
+H6H ;.cats/effect/kernel/syntax/GenSpawnOps#start().2E
+HH 7cats/effect/kernel/syntax/GenSpawnSyntax#genSpawnOps().2
+HH -local182
+H.H 4local312i
+H5H 5[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2i
+H;H ;[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+HH local322)
+I2I 2cats/FlatMap.Ops#flatMap().27
+II )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2<
+I-I 2.cats/effect/kernel/syntax/GenSpawnOps#start().2E
+II 7cats/effect/kernel/syntax/GenSpawnSyntax#genSpawnOps().2
+II local232
+II #local302
+I%I +local312i
+I,I ,[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2i
+I2I 2[com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+II local332)
+JJ cats/FlatMap.Ops#flatMap().27
+JJ )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2.
+JJ  cats/effect/kernel/Fiber#join().2
+JJ local322i
+JJ [com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+JJ local342%
+KK cats/Functor.Ops#map().27
+KK )cats/Functor.ToFunctorOps#toFunctorOps().2.
+KK  cats/effect/kernel/Fiber#join().2
+KK local332i
+KK [com/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().(concurrent)2
+KK local352Q
+TT Ccom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#2T
+TT Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[F]2T
+TT Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[A]2T
+TT Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[B]2#
+T T &scala/package.Either#2*
+UU cats/effect/package.Outcome#2T
+UU Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[F]2&
+UU scala/package.Throwable#2T
+UU Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[A]2(
+UU $cats/effect/package.Fiber#2T
+U%U &Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[F]2&
+U(U 1scala/package.Throwable#2T
+U3U 4Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[B]2(
+VV 
+cats/effect/package.Fiber#2T
+VV Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[F]2&
+VV scala/package.Throwable#2T
+VV Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[A]2*
+VV $cats/effect/package.Outcome#2T
+V%V &Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[F]2&
+V(V 1scala/package.Throwable#2T
+V3V 4Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#[B]2T
+YY Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#2W
+YY Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[F]2W
+YY Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[A]2W
+YY Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[B]2#
+Y#Y )scala/package.Either#2*
+Y*Y 1cats/effect/package.Outcome#2W
+Y2Y 3Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[F]2&
+Y5Y >scala/package.Throwable#2W
+Y@Y AIcom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[A]2*
+YDY Kcats/effect/package.Outcome#2W
+YLY MIcom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[F]2&
+YOY Xscala/package.Throwable#2W
+YZY [Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#[B]25
+[[ ''cats/effect/syntax/package.monadCancel.2!
+[[ cats/effect/syntax/2
+[[ cats/effect/2
+[	[ cats/2/
+\\ !!cats/effect/syntax/package.spawn.2!
+\\ cats/effect/syntax/2
+\\ cats/effect/2
+\	\ cats/2T
+^^ Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().2W
+^^ Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[F]2W
+^^ Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[A]2W
+^^ Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[B]2X
+^^  Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(fa)2W
+^"^ #Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[F]2W
+^$^ %Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[A]2X
+^(^ *Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(fb)2W
+^,^ -Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[F]2W
+^.^ /Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[B]2`
+^8^ BRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2-
+^D^ Ncats/effect/package.Concurrent#2W
+^O^ PIcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[F]2W
+^T^ UIcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[F]2Q
+^V^ `Ccom/rockthejvm/part5polymorphic/PolymorphicCoordination.RaceResult#2W
+^a^ bIcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[F]2W
+^d^ eIcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[A]2W
+^g^ hIcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[B]2<
+__ .cats/effect/kernel/MonadCancel#uncancelable().2`
+__ Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+__ "local362)
+a=a =cats/FlatMap.Ops#flatMap().27
+aa )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2:
+aa %,cats/effect/kernel/GenConcurrent#deferred().2`
+aa Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2T
+a&a 3Fcom/rockthejvm/part5polymorphic/PolymorphicCoordination.EitherOutcome#2W
+a4a 5Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[F]2W
+a7a 8Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[A]2W
+a:a ;Icom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().[B]2`
+a=a =Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+aa local372)
+bXb Xcats/FlatMap.Ops#flatMap().27
+bb )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2<
+bSb X.cats/effect/kernel/syntax/GenSpawnOps#start().2E
+bb 7cats/effect/kernel/syntax/GenSpawnSyntax#genSpawnOps().2G
+bb  9cats/effect/kernel/syntax/MonadCancelOps#guaranteeCase().2K
+bb =cats/effect/kernel/syntax/MonadCancelSyntax#monadCancelOps().2X
+bb Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(fa)2`
+bb Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+b!b )local382&
+bMb Qcats/Functor.Ops#void().27
+b-b -)cats/Functor.ToFunctorOps#toFunctorOps().29
+b4b <+cats/effect/kernel/DeferredSink#complete().2
+b-b 3local372&
+bAb Ascala/util/Left.apply().2!
+b=b Ascala/package.Left.2
+bBb Jlocal382`
+bLb LRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2`
+bRb RRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2`
+bXb XRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+bb local392)
+cYc Ycats/FlatMap.Ops#flatMap().27
+cc )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2<
+cTc Y.cats/effect/kernel/syntax/GenSpawnOps#start().2E
+cc 7cats/effect/kernel/syntax/GenSpawnSyntax#genSpawnOps().2G
+cc  9cats/effect/kernel/syntax/MonadCancelOps#guaranteeCase().2K
+cc =cats/effect/kernel/syntax/MonadCancelSyntax#monadCancelOps().2X
+cc Jcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(fb)2`
+cc Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+c!c )local402&
+cNc Rcats/Functor.Ops#void().27
+c-c -)cats/Functor.ToFunctorOps#toFunctorOps().29
+c4c <+cats/effect/kernel/DeferredSink#complete().2
+c-c 3local372'
+cBc Bscala/util/Right.apply().2"
+c=c Bscala/package.Right.2
+cCc Klocal402`
+cMc MRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2`
+cSc SRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2`
+cYc YRcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+cc local412%
+k	k 	cats/Functor.Ops#map().27
+dd )cats/Functor.ToFunctorOps#toFunctorOps().2C
+d#d +5cats/effect/kernel/syntax/MonadCancelOps_#onCancel().2L
+dd >cats/effect/kernel/syntax/MonadCancelSyntax#monadCancelOps_().2+
+dd cats/arrow/FunctionK#apply().2
+dd local3626
+dd !(cats/effect/kernel/DeferredSource#get().2
+dd local372)
+f+f +cats/FlatMap.Ops#flatMap().27
+ff )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2<
+f&f +.cats/effect/kernel/syntax/GenSpawnOps#start().2E
+ff 7cats/effect/kernel/syntax/GenSpawnSyntax#genSpawnOps().20
+ff %"cats/effect/kernel/Fiber#cancel().2
+ff local392`
+f%f %Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2`
+f+f +Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+ff local422)
+g+g +cats/FlatMap.Ops#flatMap().27
+gg )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2<
+g&g +.cats/effect/kernel/syntax/GenSpawnOps#start().2E
+gg 7cats/effect/kernel/syntax/GenSpawnSyntax#genSpawnOps().20
+gg %"cats/effect/kernel/Fiber#cancel().2
+gg local412`
+g%g %Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2`
+g+g +Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+gg local432)
+h h  cats/FlatMap.Ops#flatMap().27
+hh )cats/FlatMap.ToFlatMapOps#toFlatMapOps().2.
+hh   cats/effect/kernel/Fiber#join().2
+hh local422`
+h h  Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+hh local442%
+i i  cats/Functor.Ops#map().27
+ii )cats/Functor.ToFunctorOps#toFunctorOps().2.
+ii   cats/effect/kernel/Fiber#join().2
+ii local432`
+i i  Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+ii local452`
+k	k 	Rcom/rockthejvm/part5polymorphic/PolymorphicCoordination.ourRacePair().(concurrent)2
+dd local462
+ll local462(
+mm scala/util/Left.unapply().2!
+mm scala/package.Left.2
+mm local472&
+m#m #scala/util/Left.apply().2!
+mm #scala/package.Left.2#
+m%m %scala/Tuple2.apply().2
+m%m -local472
+m/m 3local412)
+nn scala/util/Right.unapply().2"
+nn scala/package.Right.2
+nn local482'
+n%n %scala/util/Right.apply().2"
+n n %scala/package.Right.2#
+n'n 'scala/Tuple2.apply().2
+n'n +local392
+n-n 5local482L
+tt >com/rockthejvm/part5polymorphic/PolymorphicCoordination.run().2]
+tt )Ocom/rockthejvm/part5polymorphic/PolymorphicCoordination.polymorphicEggBoiler().2*
+t-t -cats/effect/IO.asyncForIO().PZ F1337D839697ADDFDBDD083873CE2669

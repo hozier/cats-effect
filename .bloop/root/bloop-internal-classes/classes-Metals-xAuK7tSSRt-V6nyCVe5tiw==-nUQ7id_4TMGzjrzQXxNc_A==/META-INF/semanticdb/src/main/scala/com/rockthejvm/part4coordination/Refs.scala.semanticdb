@@ -1,0 +1,616 @@
+
+Ôí:src/main/scala/com/rockthejvm/part4coordination/Refs.scala*5
+&com/rockthejvm/part4coordination/Refs.
+ *RefsÄ*E
+0com/rockthejvm/part4coordination/Refs.atomicMol. Ä*	atomicMolÄ*K
+3com/rockthejvm/part4coordination/Refs.atomicMol_v2. Ä*atomicMol_v2Ä*K
+3com/rockthejvm/part4coordination/Refs.increasedMol. Ä*increasedMolÄ*
+local0*refÄ*9
+*com/rockthejvm/part4coordination/Refs.mol. Ä*molÄ*
+local1*refÄ*=
+,com/rockthejvm/part4coordination/Refs.gsMol. Ä*gsMolÄ*
+local2*refÄ*;
++com/rockthejvm/part4coordination/Refs.fMol. Ä*fMolÄ*
+local3*refÄ*
+local4*valueÄ*G
+1com/rockthejvm/part4coordination/Refs.updatedMol. Ä*
+updatedMolÄ*
+local5*refÄ*
+local6*valueÄ*I
+2com/rockthejvm/part4coordination/Refs.modifiedMol. Ä*modifiedMolÄ*
+local7*refÄ*
+local8*valueÄ*b
+Acom/rockthejvm/part4coordination/Refs.demoConcurrentWorkImpure().*demoConcurrentWorkImpureÄ*
+local9 Ä*countÄ*
+local10*taskÄ*
+local11*workloadÄ*
+local12 Ä*	wordCountÄ*
+local13*x$1Ä*
+local14*newCountÄ*
+local15*x$1Ä*
+local16*x$1Ä*
+local17*workloadÄ*^
+?com/rockthejvm/part4coordination/Refs.demoConcurrentWorkPure().*demoConcurrentWorkPureÄ*
+local18*taskÄ*
+local19*workloadÄ*
+local20*totalÄ*
+local21 Ä*	wordCountÄ*
+local22*x$1Ä*
+local23*currentCountÄ*
+local24*newCountÄ*
+local25*x$1Ä*
+local26*initialCountÄ*
+local27*stringÄ*
+local28*x$1Ä*V
+;com/rockthejvm/part4coordination/Refs.tickingClockImpure().*tickingClockImpureÄ*
+local29 Ä*ticksÄ*
+local30*tickingClockÄ*
+local31*x$1Ä*
+local32*x$1Ä*
+local33*x$1Ä*
+local34*x$1Ä*
+local35*
+printTicksÄ*
+local36*x$1Ä*
+local37*x$1Ä*
+local38*x$1Ä*
+local39*x$1Ä*R
+9com/rockthejvm/part4coordination/Refs.tickingClockPure().*tickingClockPureÄ*
+local40*tickingClockÄ*
+local41*ticksÄ*
+local42*x$1Ä*
+local43*x$1Ä*
+local44*x$1Ä*
+local45*x$1Ä*
+local46*
+printTicksÄ*
+local47*ticksÄ*
+local48*x$1Ä*
+local49*tÄ*
+local50*x$1Ä*
+local51*x$1Ä*
+local52*tickRefÄ*
+local53*x$1Ä*T
+:com/rockthejvm/part4coordination/Refs.tickingClockWeird().*tickingClockWeirdÄ*
+local54 Ä*ticksÄ*
+local55*tickingClockÄ*
+local56*tÄ*
+local57*x$1Ä*
+local58*x$1Ä*
+local59*x$1Ä*
+local60*x$1Ä*
+local61*
+printTicksÄ*
+local62*tÄ*
+local63*x$1Ä*
+local64*currentTicksÄ*
+local65*x$1Ä*
+local66*x$1Ä*
+local67*x$1Ä*8
+,com/rockthejvm/part4coordination/Refs.run().*runÄ2+
+ (!com/rockthejvm/part4coordination/2
+ com/rockthejvm/2
+ com/2
+ cats/effect/IO.2
+ cats/effect/IO#2 
+ cats/effect/IOApp.2 
+ cats/effect/IOApp#2&
+ "cats/effect/package.Ref.2
+ cats/effect/2
+ cats/2#
+ com/rockthejvm/utils/2
+ com/rockthejvm/2
+ 
+com/2,
+ $javax/sound/midi/SysexMessage.2,
+ $javax/sound/midi/SysexMessage#2
+ javax/sound/midi/2
+ javax/sound/2
+ javax/2(
+  scala/concurrent/duration/2
+ scala/concurrent/2
+ scala/24
+ &com/rockthejvm/part4coordination/Refs.2'
+  cats/effect/IOApp.Simple#2 
+ cats/effect/IOApp.2>
+ 0com/rockthejvm/part4coordination/Refs.atomicMol.2
+ cats/effect/IO#2&
+ cats/effect/package.Ref#2
+ 
+scala/Int#28
+, .*cats/effect/kernel/Ref.ApplyBuilders#of().2-
+' 'cats/effect/kernel/Ref.apply().2&
+$ 'cats/effect/package.Ref.2H
++ +:cats/effect/kernel/Ref.MakeInstances#concurrentInstance().2*
++ +cats/effect/IO.asyncForIO().2A
+ 3com/rockthejvm/part4coordination/Refs.atomicMol_v2.2
+ cats/effect/IO#2&
+ cats/effect/package.Ref#2
+ "
+scala/Int#2#
+* -cats/effect/IO.ref().2
+' )cats/effect/IO.2A
+ 3com/rockthejvm/part4coordination/Refs.increasedMol.2
+ cats/effect/IO#2
+ scala/Unit#2'
+) 0cats/effect/IO#flatMap().2>
+ (0com/rockthejvm/part4coordination/Refs.atomicMol.2
+3 6local02/
+ !cats/effect/kernel/RefSink#set().2
+ local028
+ 	*com/rockthejvm/part4coordination/Refs.mol.2'
+ cats/effect/IO#flatMap().2>
+ 0com/rockthejvm/part4coordination/Refs.atomicMol.2
+  #local121
+ #cats/effect/kernel/RefSource#get().2
+ local12:
+ ,com/rockthejvm/part4coordination/Refs.gsMol.2
+ cats/effect/IO#2
+ 
+scala/Int#2'
+! (cats/effect/IO#flatMap().2>
+  0com/rockthejvm/part4coordination/Refs.atomicMol.2
++ .local221
+ #cats/effect/kernel/Ref#getAndSet().2
+ local229
+ 
++com/rockthejvm/part4coordination/Refs.fMol.2
+ cats/effect/IO#2
+ scala/Unit#2'
+! (cats/effect/IO#flatMap().2>
+  0com/rockthejvm/part4coordination/Refs.atomicMol.2
++ .local32.
+  cats/effect/kernel/Ref#update().2
+ local32
+ local42 
+ scala/Int#`*`(+3).2
+ local42?
+!! 1com/rockthejvm/part4coordination/Refs.updatedMol.2
+!! cats/effect/IO#2
+!! 
+scala/Int#2'
+!&! -cats/effect/IO#flatMap().2>
+!! %0com/rockthejvm/part4coordination/Refs.atomicMol.2
+!0! 3local524
+"" &cats/effect/kernel/Ref#updateAndGet().2
+"" local52
+"" local62 
+"$" %scala/Int#`*`(+3).2
+"" #local62@
+'' 2com/rockthejvm/part4coordination/Refs.modifiedMol.2
+'' cats/effect/IO#2"
+'' scala/Predef.String#2'
+'*' 1cats/effect/IO#flatMap().2>
+' ' )0com/rockthejvm/part4coordination/Refs.atomicMol.2
+'4' 7local72.
+((  cats/effect/kernel/Ref#modify().2
+(( local72
+(( local82#
+(( scala/Tuple2.apply().2 
+((  scala/Int#`*`(+3).2
+(( local82&
+(A( Bscala/StringContext#s().2*
+('( 'scala/StringContext.apply().2
+(<( Alocal82+
+-- cats/syntax/package.parallel.2
+-- cats/syntax/2
+-	- cats/2O
+.. Acom/rockthejvm/part4coordination/Refs.demoConcurrentWorkImpure().2
+.". $cats/effect/IO#2
+.%. )scala/Unit#2
+// local92
+11 local102
+11 local112"
+11 scala/Predef.String#2
+1 1 "cats/effect/IO#2
+1#1 'scala/Unit#2
+2
+2 local122#
+2*2 0scala/Array#length().2)
+22 $java/lang/String#split(+1).2
+22 local112'
+4E4 Ecats/effect/IO#flatMap().29
+4@4 E+com/rockthejvm/utils/Utils$package.debug().2%
+44 cats/effect/IO.apply().2
+44 cats/effect/IO.2&
+4=4 >scala/StringContext#s().2*
+44 scala/StringContext.apply().2
+4'4 /local112
+434 <local122
+44 local132'
+5)5 )cats/effect/IO#flatMap().2%
+55 cats/effect/IO.apply().2
+55 cats/effect/IO.2 
+55 scala/Int#`+`(+4).2
+55 local92
+55 (local122
+55 local142'
+6.6 .cats/effect/IO#flatMap().29
+6)6 .+com/rockthejvm/utils/Utils$package.debug().2%
+66 cats/effect/IO.apply().2
+66 cats/effect/IO.2&
+6&6 'scala/StringContext#s().2*
+66 scala/StringContext.apply().2
+66 &local142
+66 local152#
+7#7 #cats/effect/IO#map().2%
+77 cats/effect/IO.apply().2
+77 cats/effect/IO.2
+77 local92 
+77 scala/Int#`+`(+4).2
+77 "local122
+77 local162$
+>> cats/effect/IO#void().2=
+== /cats/syntax/ParallelSequenceOps1#parSequence().2G
+;; 9cats/syntax/ParallelSyntax#catsSyntaxParallelSequence1().24
+<< 
+&scala/collection/immutable/List#map().27
+;; )scala/collection/IterableFactory#apply().2!
+;; scala/package.List.2
+<< local102
+<< local172;
+<< -cats/UnorderedFoldable.catsTraverseForList().2;
+== -cats/UnorderedFoldable.catsTraverseForList().2-
+== cats/effect/IO.parallelForIO().2M
+GG ?com/rockthejvm/part4coordination/Refs.demoConcurrentWorkPure().2
+G G "cats/effect/IO#2
+G#G 'scala/Unit#2
+HH local182
+HH local192"
+HH scala/Predef.String#2
+HH $local202&
+H&H )cats/effect/package.Ref#2
+H.H 1
+scala/Int#2
+H5H 7cats/effect/IO#2
+H8H <scala/Unit#2
+I
+I local212#
+I*I 0scala/Array#length().2)
+II $java/lang/String#split(+1).2
+II local192'
+LEL Ecats/effect/IO#flatMap().29
+L@L E+com/rockthejvm/utils/Utils$package.debug().2%
+LL cats/effect/IO.apply().2
+LL cats/effect/IO.2&
+L=L >scala/StringContext#s().2*
+LL scala/StringContext.apply().2
+L'L /local192
+L3L <local212
+LL local222'
+MPM Pcats/effect/IO#flatMap().24
+MM &&cats/effect/kernel/Ref#updateAndGet().2
+MM local202
+M'M 3local232 
+MDM Escala/Int#`+`(+4).2
+M7M Clocal232
+MFM Olocal212
+MM local242#
+N.N .cats/effect/IO#map().29
+N)N .+com/rockthejvm/utils/Utils$package.debug().2%
+NN cats/effect/IO.apply().2
+NN cats/effect/IO.2&
+N&N 'scala/StringContext#s().2*
+NN scala/StringContext.apply().2
+NN &local242
+NN local252'
+S#S #cats/effect/IO#flatMap().28
+SS  *cats/effect/kernel/Ref.ApplyBuilders#of().2-
+SS cats/effect/kernel/Ref.apply().2&
+SS cats/effect/package.Ref.2H
+SS :cats/effect/kernel/Ref.MakeInstances#concurrentInstance().2*
+SS cats/effect/IO.asyncForIO().2
+SS local262#
+VV cats/effect/IO#map().2=
+V	V /cats/syntax/ParallelSequenceOps1#parSequence().2G
+TT 9cats/syntax/ParallelSyntax#catsSyntaxParallelSequence1().24
+U	U &scala/collection/immutable/List#map().27
+TT )scala/collection/IterableFactory#apply().2!
+TT scala/package.List.2
+UU local272
+UU local182
+UU "local272
+U$U 0local262;
+U2U 2-cats/UnorderedFoldable.catsTraverseForList().2;
+VV -cats/UnorderedFoldable.catsTraverseForList().2-
+VV cats/effect/IO.parallelForIO().2
+TT local282I
+]] ;com/rockthejvm/part4coordination/Refs.tickingClockImpure().2
+]] cats/effect/IO#2
+]] #scala/Unit#2
+^^ local292
+^^ scala/Long#2
+__ local302
+__ cats/effect/IO#2
+__ scala/Unit#2'
+`` cats/effect/IO#flatMap().2%
+`` cats/effect/IO.sleep().2
+`` cats/effect/IO.2E
+`` 7scala/concurrent/duration/DurationConversions#second().2>
+`` 0scala/concurrent/duration/package.DurationInt().2
+`` local312'
+a/a /cats/effect/IO#flatMap().29
+a*a /+com/rockthejvm/utils/Utils$package.debug().2%
+aa cats/effect/IO.apply().2
+aa cats/effect/IO.23
+aa &%java/lang/System#currentTimeMillis().2
+aa java/lang/System#2
+aa local322'
+bb cats/effect/IO#flatMap().2%
+bb cats/effect/IO.apply().2
+bb cats/effect/IO.2
+bb local292!
+bb scala/Long#`+`(+4).2
+bb local332#
+cc cats/effect/IO#map().2
+cc local302
+cc local342
+ff local352
+ff cats/effect/IO#2
+ff scala/Unit#2'
+gg cats/effect/IO#flatMap().2%
+gg cats/effect/IO.sleep().2
+gg cats/effect/IO.2F
+gg 8scala/concurrent/duration/DurationConversions#seconds().2>
+gg 0scala/concurrent/duration/package.DurationInt().2
+gg local362'
+h%h %cats/effect/IO#flatMap().29
+h h %+com/rockthejvm/utils/Utils$package.debug().2%
+hh cats/effect/IO.apply().2
+hh cats/effect/IO.2&
+hh scala/StringContext#s().2*
+hh scala/StringContext.apply().2
+hh local292
+hh local372#
+ii cats/effect/IO#map().2
+ii local352
+ii local382#
+m/m /cats/effect/IO#map().28
+m&m /*cats/syntax/Tuple2ParallelOps#parTupled().2I
+mm ;cats/syntax/TupleParallelSyntax#catsSyntaxTuple2Parallel().2#
+mm scala/Tuple2.apply().2
+mm local302
+mm $local352-
+m/m /cats/effect/IO.parallelForIO().2
+mm local392G
+qq 9com/rockthejvm/part4coordination/Refs.tickingClockPure().2
+qq cats/effect/IO#2
+qq !scala/Unit#2
+rr local402
+rr local412&
+rr cats/effect/package.Ref#2
+r$r '
+scala/Int#2
+r+r -cats/effect/IO#2
+r.r 2scala/Unit#2'
+ss cats/effect/IO#flatMap().2%
+ss cats/effect/IO.sleep().2
+ss cats/effect/IO.2E
+ss 7scala/concurrent/duration/DurationConversions#second().2>
+ss 0scala/concurrent/duration/package.DurationInt().2
+ss local422'
+t/t /cats/effect/IO#flatMap().29
+t*t /+com/rockthejvm/utils/Utils$package.debug().2%
+tt cats/effect/IO.apply().2
+tt cats/effect/IO.23
+tt &%java/lang/System#currentTimeMillis().2
+tt java/lang/System#2
+tt local432'
+uu cats/effect/IO#flatMap().2.
+uu  cats/effect/kernel/Ref#update().2
+uu local412 
+uu scala/Int#`+`(+4).2
+uu local442#
+vv cats/effect/IO#map().2
+vv local402
+vv local412
+vv local452
+yy local462
+yy local472&
+yy cats/effect/package.Ref#2
+y"y %
+scala/Int#2
+y)y +cats/effect/IO#2
+y,y 0scala/Unit#2'
+zz cats/effect/IO#flatMap().2%
+zz cats/effect/IO.sleep().2
+zz cats/effect/IO.2F
+zz 8scala/concurrent/duration/DurationConversions#seconds().2>
+zz 0scala/concurrent/duration/package.DurationInt().2
+zz local482'
+{{ cats/effect/IO#flatMap().21
+{{ #cats/effect/kernel/RefSource#get().2
+{{ local472
+{{ local492'
+|!| !cats/effect/IO#flatMap().29
+|| !+com/rockthejvm/utils/Utils$package.debug().2%
+|| cats/effect/IO.apply().2
+|| cats/effect/IO.2&
+|| scala/StringContext#s().2*
+|| scala/StringContext.apply().2
+|| local492
+|| local502#
+}} cats/effect/IO#map().2
+}} local462
+}} local472
+}} local512)
+
+ÅÅ cats/effect/IO#flatMap().2:
+
+ÅÅ *cats/effect/kernel/Ref.ApplyBuilders#of().2/
+
+ÅÅ cats/effect/kernel/Ref.apply().2(
+
+ÅÅ cats/effect/package.Ref.2J
+
+ÅÅ :cats/effect/kernel/Ref.MakeInstances#concurrentInstance().2,
+
+ÅÅ cats/effect/IO.asyncForIO().2
+
+ÅÅ local522%
+
+ÇAÇ Acats/effect/IO#map().2:
+
+Ç8Ç A*cats/syntax/Tuple2ParallelOps#parTupled().2K
+
+ÇÇ ;cats/syntax/TupleParallelSyntax#catsSyntaxTuple2Parallel().2%
+
+ÇÇ scala/Tuple2.apply().2
+
+ÇÇ local402
+
+ÇÇ  local522
+
+Ç#Ç -local462
+
+Ç.Ç 5local522/
+
+ÇAÇ Acats/effect/IO.parallelForIO().2
+
+ÇÇ local532J
+
+ÜÜ :com/rockthejvm/part4coordination/Refs.tickingClockWeird().2
+
+ÜÜ cats/effect/IO#2
+
+ÜÜ "scala/Unit#2
+
+áá local542:
+
+áá *cats/effect/kernel/Ref.ApplyBuilders#of().2/
+
+áá cats/effect/kernel/Ref.apply().2(
+
+áá cats/effect/package.Ref.2J
+
+áá :cats/effect/kernel/Ref.MakeInstances#concurrentInstance().2,
+
+áá cats/effect/IO.asyncForIO().2
+
+ââ local552
+
+ââ cats/effect/IO#2
+
+ââ scala/Unit#2)
+
+ää cats/effect/IO#flatMap().2
+
+ää local542
+
+ää local562)
+
+ãã cats/effect/IO#flatMap().2'
+
+ãã cats/effect/IO.sleep().2
+
+ãã cats/effect/IO.2G
+
+ãã 7scala/concurrent/duration/DurationConversions#second().2@
+
+ãã 0scala/concurrent/duration/package.DurationInt().2
+
+ãã local572)
+
+å/å /cats/effect/IO#flatMap().2;
+
+å*å /+com/rockthejvm/utils/Utils$package.debug().2'
+
+åå cats/effect/IO.apply().2
+
+åå cats/effect/IO.25
+
+åå &%java/lang/System#currentTimeMillis().2!
+
+åå java/lang/System#2
+
+åå local582)
+
+çç cats/effect/IO#flatMap().20
+
+çç  cats/effect/kernel/Ref#update().2
+
+çç local562"
+
+çç scala/Int#`+`(+4).2
+
+çç local592%
+
+éé cats/effect/IO#map().2
+
+éé local552
+
+éé local602
+
+ëë local612
+
+ëë cats/effect/IO#2
+
+ëë scala/Unit#2)
+
+íí cats/effect/IO#flatMap().2
+
+íí local542
+
+íí local622)
+
+ìì cats/effect/IO#flatMap().2'
+
+ìì cats/effect/IO.sleep().2
+
+ìì cats/effect/IO.2H
+
+ìì 8scala/concurrent/duration/DurationConversions#seconds().2@
+
+ìì 0scala/concurrent/duration/package.DurationInt().2
+
+ìì local632)
+
+îî cats/effect/IO#flatMap().23
+
+îî #cats/effect/kernel/RefSource#get().2
+
+îî local622
+
+îî local642)
+
+ï,ï ,cats/effect/IO#flatMap().2;
+
+ï'ï ,+com/rockthejvm/utils/Utils$package.debug().2'
+
+ïï cats/effect/IO.apply().2
+
+ïï cats/effect/IO.2(
+
+ï$ï %scala/StringContext#s().2,
+
+ïï scala/StringContext.apply().2
+
+ïï $local642
+
+ïï local652%
+
+ññ cats/effect/IO#map().2
+
+ññ local612
+
+ññ local662%
+
+ö/ö /cats/effect/IO#map().2:
+
+ö&ö /*cats/syntax/Tuple2ParallelOps#parTupled().2K
+
+öö ;cats/syntax/TupleParallelSyntax#catsSyntaxTuple2Parallel().2%
+
+öö scala/Tuple2.apply().2
+
+öö local552
+
+öö $local612/
+
+ö/ö /cats/effect/IO.parallelForIO().2
+
+öö local672<
+
+ûû ,com/rockthejvm/part4coordination/Refs.run().2J
+
+ûû &:com/rockthejvm/part4coordination/Refs.tickingClockWeird().PZ 8C5B82C66C8FD448014ABEB41405E432
