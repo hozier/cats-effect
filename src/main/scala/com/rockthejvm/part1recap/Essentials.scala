@@ -6,18 +6,14 @@ import scala.concurrent.Future
 import scala.util.Success
 import scala.util.Failure
 
+  /** @note
+    *   Concept: Futures review Furtures are data structures whose values are computed
+    *   on some other thread at some point in the future. Futures will need an
+    *   implicit execution context (a data structure that will hold the
+    *   mechanism for scheduling threads).
+    */
 object Essentials {
-
-  // immutable val, expression review, etc.
-  def main(args: Array[String]): Unit = {
-
-    /** @note
-      *   Futures review Furtures are data structures whose values are computed
-      *   on some other thread at some point in the future. Futures will need an
-      *   implicit execution context (a data structure that will hold the
-      *   mechanism for scheduling threads).
-      */
-
+  def main(args: Array[String]): Unit = 
     /** @note
       *   the typical convention for working with ecs would normally be to:
       *   import scala.concurrent.ExecutionContext.Implicits.global however we
