@@ -38,7 +38,6 @@ object Effects {
         }
         val sampleCall: IO[Int] = IO(sampleCallback)
      */
-
   }
   object Excercise {
 
