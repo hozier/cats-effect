@@ -1,83 +1,0 @@
-
-À7src/main/scala/com/rockthejvm/part2effects/IOApps.scala*4
-#com/rockthejvm/part2effects/IOApps.
- *IOApps€*>
-+com/rockthejvm/part2effects/IOApps.program. €*program€*
-local0*line€*
-local1*x$1€*6
-$com/rockthejvm/part2effects/TestApp.
- *TestApp€*8
-+com/rockthejvm/part2effects/TestApp.main().*main€*>
-1com/rockthejvm/part2effects/TestApp.main().(args)*args€*<
-'com/rockthejvm/part2effects/FirstCEApp.
- *
-FirstCEApp€*9
--com/rockthejvm/part2effects/FirstCEApp.run().*run€*@
-3com/rockthejvm/part2effects/FirstCEApp.run().(args)*args€*>
-(com/rockthejvm/part2effects/MySimpleApp.
- *MySimpleApp€*:
-.com/rockthejvm/part2effects/MySimpleApp.run().*run€2&
- #com/rockthejvm/part2effects/2
- com/rockthejvm/2
- com/2#
- cats/effect/ExitCode.2#
- cats/effect/ExitCode#2
-  cats/effect/IO.2
-  cats/effect/IO#2 
-" 'cats/effect/IOApp.2 
-" 'cats/effect/IOApp#2
- cats/effect/2
- cats/2
- scala/io/StdIn.2
- scala/io/StdIn#2
- 	scala/io/2
- scala/21
- #com/rockthejvm/part2effects/IOApps.29
- +com/rockthejvm/part2effects/IOApps.program.2'
-   cats/effect/IO#flatMap().2%
- cats/effect/IO.apply().2
- cats/effect/IO.2(
- scala/io/StdIn#readLine().2
- scala/io/StdIn.2
- local02#
-	3	 3cats/effect/IO#map().2%
-		 cats/effect/IO.apply().2
-			 cats/effect/IO.2'
-		 scala/Predef.println(+1).2&
-	0	 1scala/StringContext#s().2*
-		 scala/StringContext.apply().2
-	,	 0local02
-		 local122
- $com/rockthejvm/part2effects/TestApp.21
-	 #com/rockthejvm/part2effects/IOApps.29
- 
-+com/rockthejvm/part2effects/TestApp.main().2?
- 1com/rockthejvm/part2effects/TestApp.main().(args)2
- scala/Array#2"
- scala/Predef.String#2
-! %scala/Unit#22
-( .$cats/effect/unsafe/implicits.global.2+
- 'cats/effect/unsafe/implicits.2!
- cats/effect/unsafe/2
- cats/effect/2
- cats/25
- 'cats/effect/IOPlatform#unsafeRunSync().29
- +com/rockthejvm/part2effects/IOApps.program.22
- $cats/effect/unsafe/implicits.global.25
- 'com/rockthejvm/part2effects/FirstCEApp.2 
- cats/effect/IOApp#21
-	 #com/rockthejvm/part2effects/IOApps.2;
- -com/rockthejvm/part2effects/FirstCEApp.run().2A
- 3com/rockthejvm/part2effects/FirstCEApp.run().(args)2!
- scala/package.List#2"
- $scala/Predef.String#2"
- cats/effect/IO#as().29
- +com/rockthejvm/part2effects/IOApps.program.2+
- cats/effect/ExitCode.Success.2#
- cats/effect/ExitCode.26
- (com/rockthejvm/part2effects/MySimpleApp.2'
-! 'cats/effect/IOApp.Simple#2 
-  cats/effect/IOApp.21
-	 #com/rockthejvm/part2effects/IOApps.2<
-   .com/rockthejvm/part2effects/MySimpleApp.run().29
-   +com/rockthejvm/part2effects/IOApps.program.PZ 23ACEAD9269CA5058665118D1AE52F3E

@@ -1,402 +1,0 @@
-
-–z@src/main/scala/com/rockthejvm/part4coordination/Semaphores.scala*A
-,com/rockthejvm/part4coordination/Semaphores.
- *
-Semaphores€*K
-6com/rockthejvm/part4coordination/Semaphores.semaphore. €*	semaphore€*^
-Bcom/rockthejvm/part4coordination/Semaphores.doWorkWhileLoggedIn().*doWorkWhileLoggedIn€*B
-4com/rockthejvm/part4coordination/Semaphores.login().*login€*C
-8com/rockthejvm/part4coordination/Semaphores.login().(id)*id€*E
-9com/rockthejvm/part4coordination/Semaphores.login().(sem)*sem€*
-local0*x$1€*
-local1*x$1€*
-local2*x$1€*
-local3*res€*
-local4*x$1€*
-local5*x$1€*R
-<com/rockthejvm/part4coordination/Semaphores.demoSemaphore().*demoSemaphore€*
-local6*sem€*
-local7*user1Fib€*
-local8*user2Fib€*
-local9*user3Fib€*
-local10*x$1€*
-local11*x$1€*
-local12*x$1€*R
-<com/rockthejvm/part4coordination/Semaphores.weightedLogin().*weightedLogin€*K
-@com/rockthejvm/part4coordination/Semaphores.weightedLogin().(id)*id€*e
-Mcom/rockthejvm/part4coordination/Semaphores.weightedLogin().(requiredPermits)*requiredPermits€*M
-Acom/rockthejvm/part4coordination/Semaphores.weightedLogin().(sem)*sem€*
-local13*x$1€*
-local14*x$1€*
-local15*x$1€*
-local16*res€*
-local17*x$1€*
-local18*x$1€*b
-Dcom/rockthejvm/part4coordination/Semaphores.demoWeightedSemaphore().*demoWeightedSemaphore€*
-local19*sem€*
-local20*user1Fib€*
-local21*user2Fib€*
-local22*user3Fib€*
-local23*x$1€*
-local24*x$1€*
-local25*x$1€*C
-2com/rockthejvm/part4coordination/Semaphores.mutex. €*mutex€*C
-2com/rockthejvm/part4coordination/Semaphores.users. €*users€*
-local26*id€*
-local27*sem€*
-local28*x$1€*
-local29*x$1€*
-local30*x$1€*
-local31*res€*
-local32*x$1€*
-local33*x$1€*M
-7com/rockthejvm/part4coordination/Semaphores.usersFixed. €*
-usersFixed€*
-local34*sem€*
-local35*id€*
-local36*x$1€*
-local37*x$1€*
-local38*x$1€*
-local39*res€*
-local40*x$1€*
-local41*x$1€*>
-2com/rockthejvm/part4coordination/Semaphores.run().*run€2+
- (!com/rockthejvm/part4coordination/2
- com/rockthejvm/2
- com/2(
-  cats/effect/std/Semaphore.2(
-  cats/effect/std/Semaphore#2
- cats/effect/std/2
- cats/effect/2
- cats/2
- cats/effect/IO.2
- cats/effect/IO#2 
- cats/effect/IOApp.2 
- cats/effect/IOApp#2
- cats/effect/2
- cats/2+
- cats/syntax/package.parallel.2
- cats/syntax/2
- cats/2#
- com/rockthejvm/utils/2
- com/rockthejvm/2
- 
-com/2(
-  scala/concurrent/duration/2
- scala/concurrent/2
- scala/2 
- scala/util/Random.2 
- scala/util/Random#2
- scala/util/2
- scala/2:
-
-
- ,com/rockthejvm/part4coordination/Semaphores.2'
-
- 
- &cats/effect/IOApp.Simple#2 
-
-
- cats/effect/IOApp.2D
- 6com/rockthejvm/part4coordination/Semaphores.semaphore.2
- cats/effect/IO#2(
- cats/effect/std/Semaphore#20
-. ."cats/effect/std/Semaphore.apply().2(
-% .cats/effect/std/Semaphore.2*
-5 5cats/effect/IO.asyncForIO().2P
- Bcom/rockthejvm/part4coordination/Semaphores.doWorkWhileLoggedIn().2
- cats/effect/IO#2
-  #
-scala/Int#2$
-: <cats/effect/IO#`>>`().2%
-* /cats/effect/IO.sleep().2
-' )cats/effect/IO.2E
-2 87scala/concurrent/duration/DurationConversions#second().2>
-0 00scala/concurrent/duration/package.DurationInt().2%
-? ?cats/effect/IO.apply().2
-= ?cats/effect/IO.2,
-G Nscala/util/Random#nextInt(+1).2 
-@ Fscala/util/Random.2B
- 4com/rockthejvm/part4coordination/Semaphores.login().2F
- 8com/rockthejvm/part4coordination/Semaphores.login().(id)2
- 
-scala/Int#2G
- 9com/rockthejvm/part4coordination/Semaphores.login().(sem)2(
- #cats/effect/std/Semaphore#2
-* ,cats/effect/IO#2
-- 0
-scala/Int#2'
-8 8cats/effect/IO#flatMap().29
-3 8+com/rockthejvm/utils/Utils$package.debug().2%
- cats/effect/IO.apply().2
-	 cats/effect/IO.2&
-0 1scala/StringContext#s().2*
- scala/StringContext.apply().2F
- 8com/rockthejvm/part4coordination/Semaphores.login().(id)2
- local02'
- cats/effect/IO#flatMap().22
- $cats/effect/std/Semaphore#acquire().2G
-	 9com/rockthejvm/part4coordination/Semaphores.login().(sem)2
- local12'
-9 9cats/effect/IO#flatMap().29
-4 9+com/rockthejvm/utils/Utils$package.debug().2%
- cats/effect/IO.apply().2
-	 cats/effect/IO.2&
-1 2scala/StringContext#s().2*
- scala/StringContext.apply().2F
- 8com/rockthejvm/part4coordination/Semaphores.login().(id)2
- local22'
-   cats/effect/IO#flatMap().2P
- Bcom/rockthejvm/part4coordination/Semaphores.doWorkWhileLoggedIn().2
- local32'
-> >cats/effect/IO#flatMap().29
-9 >+com/rockthejvm/utils/Utils$package.debug().2%
- cats/effect/IO.apply().2
-	 cats/effect/IO.2&
-6 7scala/StringContext#s().2*
- scala/StringContext.apply().2F
- 8com/rockthejvm/part4coordination/Semaphores.login().(id)2
-# &local32
- local42#
- cats/effect/IO#map().22
- $cats/effect/std/Semaphore#release().2G
-	 9com/rockthejvm/part4coordination/Semaphores.login().(sem)2
- local52
-
- local32J
- <com/rockthejvm/part4coordination/Semaphores.demoSemaphore().2'
- cats/effect/IO#flatMap().20
- "cats/effect/std/Semaphore.apply().2(
- cats/effect/std/Semaphore.2*
- cats/effect/IO.asyncForIO().2
- local62'
-# #cats/effect/IO#flatMap().2%
- #cats/effect/IO#start().2B
- 4com/rockthejvm/part4coordination/Semaphores.login().2
- local62
- local72'
-# #cats/effect/IO#flatMap().2%
- #cats/effect/IO#start().2B
- 4com/rockthejvm/part4coordination/Semaphores.login().2
- local62
- local82'
- #  #cats/effect/IO#flatMap().2%
-   #cats/effect/IO#start().2B
-   4com/rockthejvm/part4coordination/Semaphores.login().2
-   local62
-   local92'
-!! cats/effect/IO#flatMap().2.
-!!  cats/effect/kernel/Fiber#join().2
-!	! local72
-!! local102'
-"" cats/effect/IO#flatMap().2.
-""  cats/effect/kernel/Fiber#join().2
-"	" local82
-"" local112#
-## cats/effect/IO#map().2.
-##  cats/effect/kernel/Fiber#join().2
-#	# local92
-## local122J
-&& <com/rockthejvm/part4coordination/Semaphores.weightedLogin().2N
-&& @com/rockthejvm/part4coordination/Semaphores.weightedLogin().(id)2
-&& 
-scala/Int#2[
-&& ,Mcom/rockthejvm/part4coordination/Semaphores.weightedLogin().(requiredPermits)2
-&.& 1
-scala/Int#2O
-&3& 6Acom/rockthejvm/part4coordination/Semaphores.weightedLogin().(sem)2(
-&8& Acats/effect/std/Semaphore#2
-&H& Jcats/effect/IO#2
-&K& N
-scala/Int#2'
-'8' 8cats/effect/IO#flatMap().29
-'3' 8+com/rockthejvm/utils/Utils$package.debug().2%
-'' cats/effect/IO.apply().2
-'	' cats/effect/IO.2&
-'0' 1scala/StringContext#s().2*
-'' scala/StringContext.apply().2N
-'' @com/rockthejvm/part4coordination/Semaphores.weightedLogin().(id)2
-'' local132'
-(&( &cats/effect/IO#flatMap().23
-(( %cats/effect/std/Semaphore#acquireN().2O
-(	( Acom/rockthejvm/part4coordination/Semaphores.weightedLogin().(sem)2#
-(( scala/Int.int2long().2[
-(( %Mcom/rockthejvm/part4coordination/Semaphores.weightedLogin().(requiredPermits)2
-(( local142'
-*9* 9cats/effect/IO#flatMap().29
-*4* 9+com/rockthejvm/utils/Utils$package.debug().2%
-** cats/effect/IO.apply().2
-*	* cats/effect/IO.2&
-*1* 2scala/StringContext#s().2*
-** scala/StringContext.apply().2N
-** @com/rockthejvm/part4coordination/Semaphores.weightedLogin().(id)2
-** local152'
-+ +  cats/effect/IO#flatMap().2P
-++ Bcom/rockthejvm/part4coordination/Semaphores.doWorkWhileLoggedIn().2
-++ local162'
-,>, >cats/effect/IO#flatMap().29
-,9, >+com/rockthejvm/utils/Utils$package.debug().2%
-,, cats/effect/IO.apply().2
-,	, cats/effect/IO.2&
-,6, 7scala/StringContext#s().2*
-,, scala/StringContext.apply().2N
-,, @com/rockthejvm/part4coordination/Semaphores.weightedLogin().(id)2
-,#, &local162
-,, local172#
-.&. &cats/effect/IO#map().23
-.. %cats/effect/std/Semaphore#releaseN().2O
-.	. Acom/rockthejvm/part4coordination/Semaphores.weightedLogin().(sem)2#
-.. scala/Int.int2long().2[
-.. %Mcom/rockthejvm/part4coordination/Semaphores.weightedLogin().(requiredPermits)2
-.. local182
-/
-/ local162R
-11 Dcom/rockthejvm/part4coordination/Semaphores.demoWeightedSemaphore().2'
-22 cats/effect/IO#flatMap().20
-22 "cats/effect/std/Semaphore.apply().2(
-22 cats/effect/std/Semaphore.2*
-22 cats/effect/IO.asyncForIO().2
-22 local192'
-3.3 .cats/effect/IO#flatMap().2%
-3)3 .cats/effect/IO#start().2J
-33 <com/rockthejvm/part4coordination/Semaphores.weightedLogin().2
-3$3 'local192
-33 local202'
-4.4 .cats/effect/IO#flatMap().2%
-4)4 .cats/effect/IO#start().2J
-44 <com/rockthejvm/part4coordination/Semaphores.weightedLogin().2
-4$4 'local192
-44 local212'
-5.5 .cats/effect/IO#flatMap().2%
-5)5 .cats/effect/IO#start().2J
-55 <com/rockthejvm/part4coordination/Semaphores.weightedLogin().2
-5$5 'local192
-55 local222'
-66 cats/effect/IO#flatMap().2.
-66  cats/effect/kernel/Fiber#join().2
-6	6 local202
-66 local232'
-77 cats/effect/IO#flatMap().2.
-77  cats/effect/kernel/Fiber#join().2
-7	7 local212
-77 local242#
-88 cats/effect/IO#map().2.
-88  cats/effect/kernel/Fiber#join().2
-8	8 local222
-88 local252@
-BB 2com/rockthejvm/part4coordination/Semaphores.mutex.20
-BB "cats/effect/std/Semaphore.apply().2(
-BB cats/effect/std/Semaphore.2*
-BB cats/effect/IO.asyncForIO().2@
-CC 2com/rockthejvm/part4coordination/Semaphores.users.2
-CC cats/effect/IO#2!
-CC scala/package.List#2
-CC 
-scala/Int#2@
-C.C 92cats/syntax/ParallelTraversableOps1#parTraverse().2G
-CC 9cats/syntax/ParallelSyntax#catsSyntaxParallelTraverse1().28
-C'C -*scala/collection/IterableOnceOps#toList().2)
-C C "scala/runtime/RichInt#to().26
-CC (scala/LowPriorityImplicits#intWrapper().2;
-C-C --cats/UnorderedFoldable.catsTraverseForList().2
-C<C >local262'
-EE cats/effect/IO#flatMap().2@
-EE 2com/rockthejvm/part4coordination/Semaphores.mutex.2
-EE 	local272'
-F:F :cats/effect/IO#flatMap().29
-F5F :+com/rockthejvm/utils/Utils$package.debug().2%
-FF cats/effect/IO.apply().2
-FF cats/effect/IO.2&
-F2F 3scala/StringContext#s().2*
-FF scala/StringContext.apply().2
-FF local262
-FF local282'
-GG cats/effect/IO#flatMap().22
-GG $cats/effect/std/Semaphore#acquire().2
-GG local272
-GG local292'
-I;I ;cats/effect/IO#flatMap().29
-I6I ;+com/rockthejvm/utils/Utils$package.debug().2%
-II cats/effect/IO.apply().2
-II cats/effect/IO.2&
-I3I 4scala/StringContext#s().2*
-II scala/StringContext.apply().2
-II local262
-II local302'
-J"J "cats/effect/IO#flatMap().2P
-JJ  Bcom/rockthejvm/part4coordination/Semaphores.doWorkWhileLoggedIn().2
-JJ 	local312'
-K@K @cats/effect/IO#flatMap().29
-K;K @+com/rockthejvm/utils/Utils$package.debug().2%
-KK cats/effect/IO.apply().2
-KK cats/effect/IO.2&
-K8K 9scala/StringContext#s().2*
-KK scala/StringContext.apply().2
-KK local262
-K%K (local312
-KK local322#
-MM cats/effect/IO#map().22
-MM $cats/effect/std/Semaphore#release().2
-MM local272
-MM local332
-NN local312;
-OO -cats/UnorderedFoldable.catsTraverseForList().2-
-OO cats/effect/IO.parallelForIO().2E
-YY 7com/rockthejvm/part4coordination/Semaphores.usersFixed.2
-YY cats/effect/IO#2!
-YY scala/package.List#2
-YY 
-scala/Int#2'
-Y(Y /cats/effect/IO#flatMap().2@
-Y"Y '2com/rockthejvm/part4coordination/Semaphores.mutex.2
-Y2Y 5local342@
-ZZ  2cats/syntax/ParallelTraversableOps1#parTraverse().2G
-ZZ 9cats/syntax/ParallelSyntax#catsSyntaxParallelTraverse1().28
-ZZ *scala/collection/IterableOnceOps#toList().2)
-ZZ 	scala/runtime/RichInt#to().26
-ZZ (scala/LowPriorityImplicits#intWrapper().2;
-ZZ -cats/UnorderedFoldable.catsTraverseForList().2
-Z#Z %local352'
-\<\ <cats/effect/IO#flatMap().29
-\7\ <+com/rockthejvm/utils/Utils$package.debug().2%
-\\ cats/effect/IO.apply().2
-\\ cats/effect/IO.2&
-\4\ 5scala/StringContext#s().2*
-\\ scala/StringContext.apply().2
-\\ local352
-\\ local362'
-]] cats/effect/IO#flatMap().22
-]] $cats/effect/std/Semaphore#acquire().2
-]] local342
-]] local372'
-_=_ =cats/effect/IO#flatMap().29
-_8_ =+com/rockthejvm/utils/Utils$package.debug().2%
-__ cats/effect/IO.apply().2
-__ cats/effect/IO.2&
-_5_ 6scala/StringContext#s().2*
-__ scala/StringContext.apply().2
-__ local352
-__ local382'
-`$` $cats/effect/IO#flatMap().2P
-`` "Bcom/rockthejvm/part4coordination/Semaphores.doWorkWhileLoggedIn().2
-`` local392'
-aBa Bcats/effect/IO#flatMap().29
-a=a B+com/rockthejvm/utils/Utils$package.debug().2%
-aa cats/effect/IO.apply().2
-aa cats/effect/IO.2&
-a:a ;scala/StringContext#s().2*
-aa scala/StringContext.apply().2
-aa local352
-a'a *local392
-aa local402#
-cc cats/effect/IO#map().22
-cc $cats/effect/std/Semaphore#release().2
-cc local342
-cc local412
-dd local392;
-ee -cats/UnorderedFoldable.catsTraverseForList().2-
-ee cats/effect/IO.parallelForIO().2@
-ii 2com/rockthejvm/part4coordination/Semaphores.run().2$
-i&i *cats/effect/IO#void().29
-i i %+com/rockthejvm/utils/Utils$package.debug().2E
-ii 7com/rockthejvm/part4coordination/Semaphores.usersFixed.PZ 613344045B13861346AC4BDCEF01D3AC

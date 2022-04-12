@@ -1,22 +1,0 @@
-
-÷8src/main/scala/com/rockthejvm/part2effects/Effects.scala*6
-$com/rockthejvm/part2effects/Effects.
- *Effects€*8
-+com/rockthejvm/part2effects/Effects.main().*main€*>
-1com/rockthejvm/part2effects/Effects.main().(args)*args€2&
- #com/rockthejvm/part2effects/2
- com/rockthejvm/2
- com/2&
- scala/concurrent/Future.2&
- scala/concurrent/Future#2
- scala/concurrent/2
- scala/22
-
-
- $com/rockthejvm/part2effects/Effects.29
- 
-+com/rockthejvm/part2effects/Effects.main().2?
- 1com/rockthejvm/part2effects/Effects.main().(args)2
- scala/Array#2"
- scala/Predef.String#2
-! %scala/Unit#PZ 92820821ACB1F3011C288074FCEC92BA

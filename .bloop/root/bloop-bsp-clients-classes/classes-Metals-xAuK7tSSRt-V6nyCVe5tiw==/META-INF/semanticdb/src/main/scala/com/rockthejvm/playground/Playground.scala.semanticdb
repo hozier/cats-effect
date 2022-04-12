@@ -1,24 +1,0 @@
-
-Å9src/main/scala/com/rockthejvm/playground/Playground.scala*:
-%com/rockthejvm/playground/Playground.
- *
-Playground€*7
-+com/rockthejvm/playground/Playground.run().*run€2$
- !com/rockthejvm/playground/2
- com/rockthejvm/2
- com/2
- cats/effect/IO.2
- cats/effect/IO#2 
- cats/effect/IOApp.2 
- cats/effect/IOApp#2
- cats/effect/2
- cats/23
- %com/rockthejvm/playground/Playground.2'
-  &cats/effect/IOApp.Simple#2 
- cats/effect/IOApp.29
- +com/rockthejvm/playground/Playground.run().2
- cats/effect/IO#2
- scala/Unit#2'
- cats/effect/IO.println().2
- cats/effect/IO.2,
-B Bcats/Show.catsShowForString().PZ 18A73FFF53809928F711DC87CB49BA41

@@ -1,740 +1,0 @@
-
-«ÌFsrc/main/scala/com/rockthejvm/part4coordination/CountdownLatches.scala*M
-2com/rockthejvm/part4coordination/CountdownLatches.
- *CountdownLatchesÄ*P
->com/rockthejvm/part4coordination/CountdownLatches.announcer().*	announcerÄ*S
-Ecom/rockthejvm/part4coordination/CountdownLatches.announcer().(latch)*latchÄ*
-local0*x$1Ä*
-local1*x$1Ä*
-local2*x$1Ä*
-local3*x$1Ä*
-local4*x$1Ä*
-local5*x$1Ä*
-local6*x$1Ä*
-local7*x$1Ä*
-local8*x$1Ä*
-local9*x$1Ä*
-local10*x$1Ä*
-local11*x$1Ä*V
-Acom/rockthejvm/part4coordination/CountdownLatches.createRunner().*createRunnerÄ*P
-Ecom/rockthejvm/part4coordination/CountdownLatches.createRunner().(id)*idÄ*V
-Hcom/rockthejvm/part4coordination/CountdownLatches.createRunner().(latch)*latchÄ*
-local12*x$1Ä*
-local13*x$1Ä*
-local14*x$1Ä*J
-;com/rockthejvm/part4coordination/CountdownLatches.sprint().*sprintÄ*
-local15*latchÄ*
-local16*announcerFibÄ*
-local17*idÄ*
-local18*x$1Ä*
-local19*x$1Ä*R
-=com/rockthejvm/part4coordination/CountdownLatches.FileServer.
- *
-FileServerÄ*f
-Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.fileChunksList. Ä*fileChunksListÄ*a
-Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.getNumChunks().*getNumChunksÄ*a
-Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.getFileChunk().*getFileChunkÄ*Y
-Ocom/rockthejvm/part4coordination/CountdownLatches.FileServer.getFileChunk().(n)*nÄ*T
-@com/rockthejvm/part4coordination/CountdownLatches.writeToFile().*writeToFileÄ*S
-Fcom/rockthejvm/part4coordination/CountdownLatches.writeToFile().(path)*pathÄ*[
-Jcom/rockthejvm/part4coordination/CountdownLatches.writeToFile().(contents)*contentsÄ*
-local20 Ä*fileResourceÄ*
-local21*writerÄ*
-local22*writerÄ*b
-Gcom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().*appendFileContentsÄ*b
-Qcom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().(fromPath)*fromPathÄ*^
-Ocom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().(toPath)*toPathÄ*$
-local23 Ä*compositeResourceÄ*
-local24*sourceÄ*
-local25*readerÄ*
-local26*writerÄ*
-local27*writerÄ*
-local28*x$1Ä*
-local29 Ä*readerÄ*
-local30 Ä*writerÄ*
-local31*x$0Ä*n
-Mcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().*createFileDownloaderTaskÄ*\
-Qcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(id)*idÄ*b
-Tcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(latch)*latchÄ*h
-Wcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(filename)*filenameÄ*l
-Ycom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(destFolder)*
-destFolderÄ*
-local32*x$1Ä*
-local33*x$1Ä*
-local34*chunkÄ*
-local35*x$1Ä*
-local36*x$1Ä*
-local37*x$1Ä*V
-Acom/rockthejvm/part4coordination/CountdownLatches.downloadFile().*downloadFileÄ*\
-Kcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(filename)*filenameÄ*`
-Mcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(destFolder)*
-destFolderÄ*
-local38*nÄ*
-local39*latchÄ*
-local40*x$1Ä*
-local41*idÄ*
-local42*x$1Ä*
-local43*x$1Ä*
-local44*idÄ*
-local45*x$1Ä*D
-8com/rockthejvm/part4coordination/CountdownLatches.run().*runÄ*;
-)com/rockthejvm/part4coordination/CDLatch# *CDLatchÄ*F
-4com/rockthejvm/part4coordination/CDLatch#`<init>`(). Ä@*<init>Ä*A
-1com/rockthejvm/part4coordination/CDLatch#await(). *awaitÄ*E
-3com/rockthejvm/part4coordination/CDLatch#release(). *releaseÄ*;
-)com/rockthejvm/part4coordination/CDLatch.
- *CDLatchÄ*?
-/com/rockthejvm/part4coordination/CDLatch.State# *StateÄ*L
-:com/rockthejvm/part4coordination/CDLatch.State#`<init>`(). Ä@*<init>Ä*>
-.com/rockthejvm/part4coordination/CDLatch.Done.
- à*DoneÄ*>
-.com/rockthejvm/part4coordination/CDLatch.Live# Ä*LiveÄ*K
-9com/rockthejvm/part4coordination/CDLatch.Live#`<init>`(). Ä@*<init>Ä*c
-Icom/rockthejvm/part4coordination/CDLatch.Live#`<init>`().(remainingCount) Ä*remainingCountÄ*S
-Acom/rockthejvm/part4coordination/CDLatch.Live#`<init>`().(signal) Ä*signalÄ*W
-=com/rockthejvm/part4coordination/CDLatch.Live#remainingCount. Ä*remainingCountÄ*G
-5com/rockthejvm/part4coordination/CDLatch.Live#signal. Ä*signalÄ*B
-5com/rockthejvm/part4coordination/CDLatch.Live#copy().*copyÄ*\
-Ecom/rockthejvm/part4coordination/CDLatch.Live#copy().(remainingCount)*remainingCountÄ*L
-=com/rockthejvm/part4coordination/CDLatch.Live#copy().(signal)*signalÄ*V
-?com/rockthejvm/part4coordination/CDLatch.Live#copy$default$1().*copy$default$1Ä*V
-?com/rockthejvm/part4coordination/CDLatch.Live#copy$default$2().*copy$default$2Ä*>
-3com/rockthejvm/part4coordination/CDLatch.Live#_1().*_1Ä*>
-3com/rockthejvm/part4coordination/CDLatch.Live#_2().*_2Ä*=
-.com/rockthejvm/part4coordination/CDLatch.Live.
- *LiveÄ*D
-6com/rockthejvm/part4coordination/CDLatch.Live.apply().*applyÄ*]
-Fcom/rockthejvm/part4coordination/CDLatch.Live.apply().(remainingCount)*remainingCountÄ*M
->com/rockthejvm/part4coordination/CDLatch.Live.apply().(signal)*signalÄ*H
-8com/rockthejvm/part4coordination/CDLatch.Live.unapply().*unapplyÄ*I
-=com/rockthejvm/part4coordination/CDLatch.Live.unapply().(x$1)*x$1Ä*J
-9com/rockthejvm/part4coordination/CDLatch.Live.toString().*toStringÄ*?
-1com/rockthejvm/part4coordination/CDLatch.apply().*applyÄ*F
-8com/rockthejvm/part4coordination/CDLatch.apply().(count)*countÄ*
-local46*signalÄ*
-local47*stateÄ*
-local48 *$anonÄ*
-local49*awaitÄ*
-local50*sÄ*
-local51*releaseÄ*
-local52*x$1Ä*
-local53 Ä*signalÄ*
-local54 Ä*nÄ*
-local55 Ä*signalÄ2+
- (!com/rockthejvm/part4coordination/2
- com/rockthejvm/2
- com/2
- cats/effect/2
- cats/2*
- "cats/effect/kernel/Deferred.2*
- "cats/effect/kernel/Deferred#2!
- cats/effect/kernel/2
- cats/effect/2
- cats/2-
- %cats/effect/std/CountDownLatch.2-
- %cats/effect/std/CountDownLatch#2
- cats/effect/std/2
- cats/effect/2
- cats/2
- cats/effect/IO.2
- cats/effect/IO#2 
- cats/effect/IOApp.2 
- cats/effect/IOApp#2&
- "cats/effect/package.Ref.2+
-$ ,cats/effect/package.Resource.2
- cats/effect/2
- cats/2(
-  scala/concurrent/duration/2
- scala/concurrent/2
- scala/2#
- com/rockthejvm/utils/2
- com/rockthejvm/2
- 
-com/2+
-		 cats/syntax/package.parallel.2
-		 cats/syntax/2
-		 cats/2+
-
-
- cats/syntax/package.traverse.2
-
-
- cats/syntax/2
-
-
- cats/2
- java/io/File.2
- java/io/File#2!
-  java/io/FileWriter.2!
-  java/io/FileWriter#2
- java/io/2
- java/2
- scala/io/Source.2
- scala/io/Source#2
- 	scala/io/2
- scala/2 
- scala/util/Random.2 
- scala/util/Random#2
- scala/util/2
- scala/2@
- 2com/rockthejvm/part4coordination/CountdownLatches.2'
-& ,cats/effect/IOApp.Simple#2 
-  %cats/effect/IOApp.2L
- >com/rockthejvm/part4coordination/CountdownLatches.announcer().2S
- Ecom/rockthejvm/part4coordination/CountdownLatches.announcer().(latch)2-
- %cats/effect/std/CountDownLatch#2
-, .cats/effect/IO#2
-/ 3scala/Unit#2'
-D Dcats/effect/IO#flatMap().2$
-. 0cats/effect/IO#`>>`().29
-( -+com/rockthejvm/utils/Utils$package.debug().2%
- cats/effect/IO.apply().2
-	 cats/effect/IO.2%
-4 9cats/effect/IO.sleep().2
-1 3cats/effect/IO.2F
-< C8scala/concurrent/duration/DurationConversions#seconds().2>
-: :0scala/concurrent/duration/package.DurationInt().2
- local02'
-/ /cats/effect/IO#flatMap().2$
- cats/effect/IO#`>>`().29
- +com/rockthejvm/utils/Utils$package.debug().2%
- cats/effect/IO.apply().2
-	 cats/effect/IO.2%
-  %cats/effect/IO.sleep().2
- cats/effect/IO.2E
-( .7scala/concurrent/duration/DurationConversions#second().2>
-& &0scala/concurrent/duration/package.DurationInt().2
- local12'
- cats/effect/IO#flatMap().27
- )cats/effect/std/CountDownLatch#release().2S
-	 Ecom/rockthejvm/part4coordination/CountdownLatches.announcer().(latch)2
- local22'
-/ /cats/effect/IO#flatMap().2$
- cats/effect/IO#`>>`().29
- +com/rockthejvm/utils/Utils$package.debug().2%
- cats/effect/IO.apply().2
-	 cats/effect/IO.2%
-  %cats/effect/IO.sleep().2
- cats/effect/IO.2E
-( .7scala/concurrent/duration/DurationConversions#second().2>
-& &0scala/concurrent/duration/package.DurationInt().2
- local32'
- cats/effect/IO#flatMap().27
- )cats/effect/std/CountDownLatch#release().2S
-	 Ecom/rockthejvm/part4coordination/CountdownLatches.announcer().(latch)2
- local42'
-/ /cats/effect/IO#flatMap().2$
- cats/effect/IO#`>>`().29
- +com/rockthejvm/utils/Utils$package.debug().2%
- cats/effect/IO.apply().2
-	 cats/effect/IO.2%
-  %cats/effect/IO.sleep().2
- cats/effect/IO.2E
-( .7scala/concurrent/duration/DurationConversions#second().2>
-& &0scala/concurrent/duration/package.DurationInt().2
- local52'
- cats/effect/IO#flatMap().27
- )cats/effect/std/CountDownLatch#release().2S
-	 Ecom/rockthejvm/part4coordination/CountdownLatches.announcer().(latch)2
- local62'
- /  /cats/effect/IO#flatMap().2$
-   cats/effect/IO#`>>`().29
-   +com/rockthejvm/utils/Utils$package.debug().2%
-   cats/effect/IO.apply().2
- 	  cats/effect/IO.2%
-    %cats/effect/IO.sleep().2
-   cats/effect/IO.2E
- (  .7scala/concurrent/duration/DurationConversions#second().2>
- &  &0scala/concurrent/duration/package.DurationInt().2
-   local72'
-!! cats/effect/IO#flatMap().27
-!! )cats/effect/std/CountDownLatch#release().2S
-!	! Ecom/rockthejvm/part4coordination/CountdownLatches.announcer().(latch)2
-!! local82'
-"/" /cats/effect/IO#flatMap().2$
-"" cats/effect/IO#`>>`().29
-"" +com/rockthejvm/utils/Utils$package.debug().2%
-"" cats/effect/IO.apply().2
-"	" cats/effect/IO.2%
-" " %cats/effect/IO.sleep().2
-"" cats/effect/IO.2E
-"(" .7scala/concurrent/duration/DurationConversions#second().2>
-"&" &0scala/concurrent/duration/package.DurationInt().2
-"" local92'
-## cats/effect/IO#flatMap().27
-## )cats/effect/std/CountDownLatch#release().2S
-#	# Ecom/rockthejvm/part4coordination/CountdownLatches.announcer().(latch)2
-## local102#
-$$ cats/effect/IO#map().29
-$$ +com/rockthejvm/utils/Utils$package.debug().2%
-$$ cats/effect/IO.apply().2
-$	$ cats/effect/IO.2
-$$ local112O
-'' Acom/rockthejvm/part4coordination/CountdownLatches.createRunner().2S
-'' Ecom/rockthejvm/part4coordination/CountdownLatches.createRunner().(id)2
-'' 
-scala/Int#2V
-'' !Hcom/rockthejvm/part4coordination/CountdownLatches.createRunner().(latch)2-
-'#' 1cats/effect/std/CountDownLatch#2
-'8' :cats/effect/IO#2
-';' ?scala/Unit#2'
-(8( 8cats/effect/IO#flatMap().29
-(3( 8+com/rockthejvm/utils/Utils$package.debug().2%
-(( cats/effect/IO.apply().2
-(	( cats/effect/IO.2&
-(0( 1scala/StringContext#s().2*
-(( scala/StringContext.apply().2S
-(( Ecom/rockthejvm/part4coordination/CountdownLatches.createRunner().(id)2
-(( local122'
-)) cats/effect/IO#flatMap().25
-)) 'cats/effect/std/CountDownLatch#await().2V
-)	) Hcom/rockthejvm/part4coordination/CountdownLatches.createRunner().(latch)2
-)) local132#
-*+* +cats/effect/IO#map().29
-*&* ++com/rockthejvm/utils/Utils$package.debug().2%
-** cats/effect/IO.apply().2
-*	* cats/effect/IO.2&
-*#* $scala/StringContext#s().2*
-** scala/StringContext.apply().2S
-** Ecom/rockthejvm/part4coordination/CountdownLatches.createRunner().(id)2
-** local142I
--- ;com/rockthejvm/part4coordination/CountdownLatches.sprint().2
--- cats/effect/IO#2
--- scala/Unit#2'
-.". "cats/effect/IO#flatMap().25
-.. 'cats/effect/std/CountDownLatch.apply().2-
-.. cats/effect/std/CountDownLatch.2*
-.". "cats/effect/IO.asyncForIO().2
-.. 	local152'
-/*/ *cats/effect/IO#flatMap().2%
-/%/ *cats/effect/IO#start().2L
-// >com/rockthejvm/part4coordination/CountdownLatches.announcer().2
-// #local152
-// local162'
-0D0 Dcats/effect/IO#flatMap().2@
-00 %2cats/syntax/ParallelTraversableOps1#parTraverse().2G
-0	0 	9cats/syntax/ParallelSyntax#catsSyntaxParallelTraverse1().28
-00 *scala/collection/IterableOnceOps#toList().2)
-00 scala/runtime/RichInt#to().26
-0
-0 
-(scala/LowPriorityImplicits#intWrapper().2;
-00 -cats/UnorderedFoldable.catsTraverseForList().2
-0&0 (local172O
-0,0 8Acom/rockthejvm/part4coordination/CountdownLatches.createRunner().2
-090 ;local172
-0=0 Blocal152;
-0D0 D-cats/UnorderedFoldable.catsTraverseForList().2-
-0D0 Dcats/effect/IO.parallelForIO().2
-00 local182#
-11 cats/effect/IO#map().2.
-11  cats/effect/kernel/Fiber#join().2
-1	1 local162
-11 local192K
-8	8 =com/rockthejvm/part4coordination/CountdownLatches.FileServer.2Z
-99 Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.fileChunksList.2"
-99 scala/Array.apply().2
-99 scala/Array.2-
-== scala/reflect/ClassTag.apply().2Z
-?? Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.getNumChunks().2
-?? cats/effect/IO#2
-?? 
-scala/Int#2%
-?"? "cats/effect/IO.apply().2
-? ? "cats/effect/IO.2#
-?2? 8scala/Array#length().2Z
-?#? 1Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.fileChunksList.2Z
-@@ Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.getFileChunk().2]
-@@ Ocom/rockthejvm/part4coordination/CountdownLatches.FileServer.getFileChunk().(n)2
-@@ 
-scala/Int#2
-@@  cats/effect/IO#2"
-@!@ 'scala/Predef.String#2%
-@-@ -cats/effect/IO.apply().2
-@+@ -cats/effect/IO.2"
-@<@ <scala/Array#apply().2Z
-@.@ <Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.fileChunksList.2]
-@=@ >Ocom/rockthejvm/part4coordination/CountdownLatches.FileServer.getFileChunk().(n)2N
-CC @com/rockthejvm/part4coordination/CountdownLatches.writeToFile().2T
-CC Fcom/rockthejvm/part4coordination/CountdownLatches.writeToFile().(path)2"
-CC scala/Predef.String#2X
-C C (Jcom/rockthejvm/part4coordination/CountdownLatches.writeToFile().(contents)2"
-C*C 0scala/Predef.String#2
-C3C 5cats/effect/IO#2
-C6C :scala/Unit#2
-DD local2021
-D D $#cats/effect/kernel/Resource.make().2+
-DD cats/effect/package.Resource.2%
-D'D 'cats/effect/IO.apply().2
-D%D 'cats/effect/IO.2.
-D6D 6 java/io/FileWriter#`<init>`(+2).2!
-D,D 6java/io/FileWriter#2(
-D?D ?java/io/File#`<init>`(+2).2
-D;D ?java/io/File#2T
-D@D DFcom/rockthejvm/part4coordination/CountdownLatches.writeToFile().(path)2
-DID Olocal212%
-DUD Ucats/effect/IO.apply().2
-DSD Ucats/effect/IO.21
-D]D b#java/io/OutputStreamWriter#close().2
-DVD \local212*
-DfD fcats/effect/IO.asyncForIO().20
-EE "cats/effect/kernel/Resource#use().2
-EE local202
-EE local222%
-FF cats/effect/IO.apply().2
-FF cats/effect/IO.2'
-FF java/io/Writer#write(+3).2
-F	F local222X
-FF Jcom/rockthejvm/part4coordination/CountdownLatches.writeToFile().(contents)2*
-GG cats/effect/IO.asyncForIO().2U
-JJ Gcom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().2_
-JJ !Qcom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().(fromPath)2"
-J#J )scala/Predef.String#2]
-J+J 1Ocom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().(toPath)2"
-J3J 9scala/Predef.String#2
-J<J >cats/effect/IO#2
-J?J Cscala/Unit#2
-KK local2324
-LZL Z&cats/effect/kernel/Resource#flatMap().21
-LL #cats/effect/kernel/Resource.make().2+
-LL cats/effect/package.Resource.2%
-L L  cats/effect/IO.apply().2
-LL  cats/effect/IO.2)
-L(L 0scala/io/Source.fromFile().2
-L!L 'scala/io/Source.2_
-L1L 9Qcom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().(fromPath)2E
-L:L :7scala/io/LowPriorityCodecImplicits#fallbackSystemCodec.2
-L=L Clocal242%
-LIL Icats/effect/IO.apply().2
-LGL Icats/effect/IO.2&
-LQL Vscala/io/Source#close().2
-LJL Plocal242*
-LZL Zcats/effect/IO.asyncForIO().2
-LL local2520
-MgM g"cats/effect/kernel/Resource#map().21
-MM #cats/effect/kernel/Resource.make().2+
-MM cats/effect/package.Resource.2%
-M M  cats/effect/IO.apply().2
-MM  cats/effect/IO.2.
-M/M / java/io/FileWriter#`<init>`(+3).2!
-M%M /java/io/FileWriter#2(
-M8M 8java/io/File#`<init>`(+2).2
-M4M 8java/io/File#2]
-M9M ?Ocom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().(toPath)2
-MJM Plocal262%
-MVM Vcats/effect/IO.apply().2
-MTM Vcats/effect/IO.21
-M^M c#java/io/OutputStreamWriter#close().2
-MWM ]local262*
-MgM gcats/effect/IO.asyncForIO().2
-MM local272#
-NN scala/Tuple2.apply().2
-NN local252
-NN local2720
-PP "cats/effect/kernel/Resource#use().2
-PP local232
-QQ local282%
-QQ scala/Tuple2.unapply().2
-QQ local292
-QQ local302%
-Q!Q !cats/effect/IO.apply().2
-QQ !cats/effect/IO.29
-Q4Q ;+scala/collection/IterableOnceOps#foreach().21
-Q)Q 1#scala/io/BufferedSource#getLines().2
-Q"Q (local292'
-QCQ Hjava/io/Writer#write(+3).2
-Q<Q Blocal302
-Q<Q <local312*
-RR cats/effect/IO.asyncForIO().2[
-UU Mcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().2_
-UU !Qcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(id)2
-U#U &
-scala/Int#2b
-U(U -Tcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(latch)27
-U/U 6)com/rockthejvm/part4coordination/CDLatch#2e
-U8U @Wcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(filename)2"
-UBU Hscala/Predef.String#2g
-UJU TYcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(destFolder)2"
-UVU \scala/Predef.String#2
-U_U acats/effect/IO#2
-UbU fscala/Unit#2'
-V5V 5cats/effect/IO#flatMap().29
-V0V 5+com/rockthejvm/utils/Utils$package.debug().2%
-VV cats/effect/IO.apply().2
-V	V cats/effect/IO.2&
-V-V .scala/StringContext#s().2*
-VV scala/StringContext.apply().2_
-VV Qcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(id)2
-VV local322'
-W:W :cats/effect/IO#flatMap().2%
-WW cats/effect/IO.sleep().2
-W	W cats/effect/IO.2E
-W3W 97scala/concurrent/duration/DurationConversions#millis().2>
-WW 0scala/concurrent/duration/package.DurationInt().2#
-W-W 2scala/Double#toInt().2#
-W%W &scala/Double#`*`(+3).2-
-WW $scala/util/Random#nextDouble().2 
-WW scala/util/Random.2
-WW local332'
-X(X (cats/effect/IO#flatMap().2Z
-XX $Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.getFileChunk().2K
-XX =com/rockthejvm/part4coordination/CountdownLatches.FileServer.2_
-X%X 'Qcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(id)2
-XX 	local342'
-Y=Y =cats/effect/IO#flatMap().2N
-Y	Y @com/rockthejvm/part4coordination/CountdownLatches.writeToFile().2&
-Y4Y 5scala/StringContext#s().2*
-YY scala/StringContext.apply().2g
-YY "Ycom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(destFolder)2e
-Y$Y ,Wcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(filename)2_
-Y2Y 4Qcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(id)2
-Y7Y <local342
-YY local352'
-Z8Z 8cats/effect/IO#flatMap().29
-Z3Z 8+com/rockthejvm/utils/Utils$package.debug().2%
-ZZ cats/effect/IO.apply().2
-Z	Z cats/effect/IO.2&
-Z0Z 1scala/StringContext#s().2*
-ZZ scala/StringContext.apply().2_
-ZZ Qcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(id)2
-ZZ local362#
-[[ cats/effect/IO#map().2A
-[[ 3com/rockthejvm/part4coordination/CDLatch#release().2b
-[	[ Tcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().(latch)2
-[[ local372O
-ee Acom/rockthejvm/part4coordination/CountdownLatches.downloadFile().2Y
-ee Kcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(filename)2"
-ee #scala/Predef.String#2[
-e%e /Mcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(destFolder)2"
-e1e 7scala/Predef.String#2
-e:e <cats/effect/IO#2
-e=e Ascala/Unit#2'
-f f  cats/effect/IO#flatMap().2Z
-ff  Lcom/rockthejvm/part4coordination/CountdownLatches.FileServer.getNumChunks().2K
-f	f =com/rockthejvm/part4coordination/CountdownLatches.FileServer.2
-ff local382'
-gg cats/effect/IO#flatMap().2?
-gg 1com/rockthejvm/part4coordination/CDLatch.apply().27
-gg )com/rockthejvm/part4coordination/CDLatch.2
-gg local382
-gg 	local392'
-h4h 4cats/effect/IO#flatMap().29
-h/h 4+com/rockthejvm/utils/Utils$package.debug().2%
-hh cats/effect/IO.apply().2
-h	h cats/effect/IO.2&
-h,h -scala/StringContext#s().2*
-hh scala/StringContext.apply().2
-h#h $local382
-hh local402'
-ihi hcats/effect/IO#flatMap().2@
-ii '2cats/syntax/ParallelTraversableOps1#parTraverse().2G
-i	i 	9cats/syntax/ParallelSyntax#catsSyntaxParallelTraverse1().28
-ii *scala/collection/IterableOnceOps#toList().2,
-ii scala/runtime/RichInt#until().26
-i
-i 
-(scala/LowPriorityImplicits#intWrapper().2
-ii local382;
-ii -cats/UnorderedFoldable.catsTraverseForList().2
-i(i *local412[
-i.i FMcom/rockthejvm/part4coordination/CountdownLatches.createFileDownloaderTask().2
-iGi Ilocal412
-iKi Plocal392Y
-iRi ZKcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(filename)2[
-i\i fMcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(destFolder)2;
-ihi h-cats/UnorderedFoldable.catsTraverseForList().2-
-ihi hcats/effect/IO.parallelForIO().2
-ii local422'
-jj cats/effect/IO#flatMap().2?
-jj 1com/rockthejvm/part4coordination/CDLatch#await().2
-j	j local392
-jj local432#
-kzk zcats/effect/IO#map().2+
-kk $cats/Traverse.Ops#traverse().2:
-k	k 	,cats/Traverse.ToTraverseOps#toTraverseOps().28
-kk *scala/collection/IterableOnceOps#toList().2,
-kk scala/runtime/RichInt#until().26
-k
-k 
-(scala/LowPriorityImplicits#intWrapper().2
-kk local382;
-kk -cats/UnorderedFoldable.catsTraverseForList().2
-k%k 'local442U
-k+k =Gcom/rockthejvm/part4coordination/CountdownLatches.appendFileContents().2&
-k]k ^scala/StringContext#s().2*
-k@k @scala/StringContext.apply().2[
-kAk KMcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(destFolder)2Y
-kMk UKcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(filename)2
-k[k ]local442&
-kwk xscala/StringContext#s().2*
-kbk bscala/StringContext.apply().2[
-kck mMcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(destFolder)2Y
-kok wKcom/rockthejvm/part4coordination/CountdownLatches.downloadFile().(filename)2*
-kzk zcats/effect/IO.asyncForIO().2
-kk local452F
-nn 8com/rockthejvm/part4coordination/CountdownLatches.run().2O
-nn !Acom/rockthejvm/part4coordination/CountdownLatches.downloadFile().27
-uu )com/rockthejvm/part4coordination/CDLatch#2B
-vv 4com/rockthejvm/part4coordination/CDLatch#`<init>`().2?
-vv 1com/rockthejvm/part4coordination/CDLatch#await().2
-vv cats/effect/IO#2
-vv scala/Unit#2A
-ww 3com/rockthejvm/part4coordination/CDLatch#release().2
-ww cats/effect/IO#2
-ww scala/Unit#27
-zz )com/rockthejvm/part4coordination/CDLatch.2=
-{{ /com/rockthejvm/part4coordination/CDLatch.State#2H
-{{ :com/rockthejvm/part4coordination/CDLatch.State#`<init>`().2<
-|| .com/rockthejvm/part4coordination/CDLatch.Done.2=
-||  /com/rockthejvm/part4coordination/CDLatch.State#2<
-}} .com/rockthejvm/part4coordination/CDLatch.Live#2G
-}} 9com/rockthejvm/part4coordination/CDLatch.Live#`<init>`().2
-}"} %
-scala/Int#2*
-}/} 7cats/effect/kernel/Deferred#2
-}<} @scala/Unit#2=
-}K} P/com/rockthejvm/part4coordination/CDLatch.State#2K
-}}  =com/rockthejvm/part4coordination/CDLatch.Live#remainingCount.2C
-}'} -5com/rockthejvm/part4coordination/CDLatch.Live#signal.2?
- 1com/rockthejvm/part4coordination/CDLatch.apply().2F
- 8com/rockthejvm/part4coordination/CDLatch.apply().(count)2
- 
-scala/Int#2
- cats/effect/IO#27
- #)com/rockthejvm/part4coordination/CDLatch#2)
-
-Ä Ä  cats/effect/IO#flatMap().24
-
-ÄÄ $cats/effect/kernel/Deferred.apply().2,
-
-ÄÄ cats/effect/kernel/Deferred.2
-
-ÄÄ scala/Unit#2,
-
-Ä Ä  cats/effect/IO.asyncForIO().2
-
-ÄÄ 
-local462%
-
-Å3Å 3cats/effect/IO#map().2:
-
-ÅÅ *cats/effect/kernel/Ref.ApplyBuilders#of().2/
-
-ÅÅ cats/effect/kernel/Ref.apply().2(
-
-ÅÅ cats/effect/package.Ref.2J
-
-ÅÅ :cats/effect/kernel/Ref.MakeInstances#concurrentInstance().2,
-
-ÅÅ cats/effect/IO.asyncForIO().2?
-
-ÅÅ /com/rockthejvm/part4coordination/CDLatch.State#2F
-
-Å#Å #6com/rockthejvm/part4coordination/CDLatch.Live.apply().2>
-
-ÅÅ #.com/rockthejvm/part4coordination/CDLatch.Live.2H
-
-Å$Å )8com/rockthejvm/part4coordination/CDLatch.apply().(count)2
-
-Å+Å 1local462
-
-ÅÅ 	local472D
-
-ÇÇ 4com/rockthejvm/part4coordination/CDLatch#`<init>`().29
-
-ÇÇ )com/rockthejvm/part4coordination/CDLatch#2
-
-ÑÑ local492)
-
-Ñ#Ñ *cats/effect/IO#flatMap().23
-
-ÑÑ "#cats/effect/kernel/RefSource#get().2
-
-ÑÑ local472
-
-Ñ-Ñ .local502!
-
-ÖÖ scala/Any#`==`().2
-
-Ö
-Ö local502>
-
-ÖÖ .com/rockthejvm/part4coordination/CDLatch.Done.2&
-
-ÖÖ cats/effect/IO.unit().2
-
-ÖÖ cats/effect/IO.28
-
-ÜÜ (cats/effect/kernel/DeferredSource#get().2
-
-ÜÜ local462
-
-ââ local512.
-
-çç cats/effect/IO#uncancelable().2)
-
-çç cats/effect/IO#flatten().20
-
-â!â ' cats/effect/kernel/Ref#modify().2
-
-ââ  local472
-
-ää local522>
-
-ää .com/rockthejvm/part4coordination/CDLatch.Done.2/
-
-ää scala/Predef.ArrowAssoc#`->`().2*
-
-ää scala/Predef.ArrowAssoc().2>
-
-ää .com/rockthejvm/part4coordination/CDLatch.Done.2&
-
-ää "cats/effect/IO.unit().2
-
-ää cats/effect/IO.2H
-
-ãã 8com/rockthejvm/part4coordination/CDLatch.Live.unapply().2>
-
-ãã .com/rockthejvm/part4coordination/CDLatch.Live.2
-
-ãã local532/
-
-ã#ã %scala/Predef.ArrowAssoc#`->`().2*
-
-ãã scala/Predef.ArrowAssoc().2>
-
-ãã ".com/rockthejvm/part4coordination/CDLatch.Done.2&
-
-ã:ã >cats/effect/IO#void().2;
-
-ã-ã 5+cats/effect/kernel/DeferredSink#complete().2
-
-ã&ã ,local532H
-
-åå 8com/rockthejvm/part4coordination/CDLatch.Live.unapply().2>
-
-åå .com/rockthejvm/part4coordination/CDLatch.Live.2
-
-åå local542
-
-åå local552/
-
-å2å 4scala/Predef.ArrowAssoc#`->`().2*
-
-åå scala/Predef.ArrowAssoc().2F
-
-å"å "6com/rockthejvm/part4coordination/CDLatch.Live.apply().2>
-
-åå ".com/rockthejvm/part4coordination/CDLatch.Live.2"
-
-å%å &scala/Int#`-`(+3).2
-
-å#å $local542
-
-å*å 0local552&
-
-å8å <cats/effect/IO.unit().2
-
-å5å 7cats/effect/IO.2#
-
-çç scala/`<:<`.refl().PZ 65903832AB631543C1FAD7F681136DD6
