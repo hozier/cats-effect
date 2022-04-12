@@ -88,10 +88,6 @@ object Effects {
   }
 }
 def main(args: Array[String]): Unit = {
-  val start =
-    Excercise.CurrSysTime.description(System.currentTimeMillis).unsafeRun()
-  Excercise.CurrSysTime.main
   Excercise.DurationMeasurement.measure().unsafeRun()
   Excercise.Print.description("print some data").unsafeRun()
-
 }
