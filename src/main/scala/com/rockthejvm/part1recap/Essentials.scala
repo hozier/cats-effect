@@ -6,14 +6,14 @@ import scala.concurrent.Future
 import scala.util.Success
 import scala.util.Failure
 
-  /** @note
-    *   Concept: Futures review Furtures are data structures whose values are computed
-    *   on some other thread at some point in the future. Futures will need an
-    *   implicit execution context (a data structure that will hold the
-    *   mechanism for scheduling threads).
-    */
+/** @note
+  *   Concept: Futures review Furtures are data structures whose values are
+  *   computed on some other thread at some point in the future. Futures will
+  *   need an implicit execution context (a data structure that will hold the
+  *   mechanism for scheduling threads).
+  */
 object Essentials {
-  def main(args: Array[String]): Unit = 
+  def main(args: Array[String]): Unit =
     /** @note
       *   the typical convention for working with ecs would normally be to:
       *   import scala.concurrent.ExecutionContext.Implicits.global however we
@@ -44,5 +44,4 @@ object Essentials {
 
     /** an alternative way of operating on Futures can be seen below */
     val impovedFuture = future.map(_ + 1)
-  }
 }
