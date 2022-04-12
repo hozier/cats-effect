@@ -43,6 +43,7 @@ object Effects {
   object Excercise {
 
     /** @note
+      *   for each solution object, implement the description of function.
       *
       * @return
       *   an IO with its `description` -- a callback argument: () => A
