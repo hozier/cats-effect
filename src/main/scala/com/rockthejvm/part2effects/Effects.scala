@@ -66,14 +66,18 @@ object Effects {
       }
     }
     object DurationMeasurement {
-      def description[F[A] >: IO[A], A]: (A) => F[A] = computation => {
-        println(s"duration=$computation")
-        IO(() => computation)
+      def description[F[A] >: IO[A], A]: (A) => F[A] = delta => {
+        println(s"duration=$delta")
+        IO(() => delta)
       }
-      def main: Long => Unit = start => {
-        val end = CurrSysTime.description(System.currentTimeMillis).unsafeRun()
-        val delta = end - start
-        description(delta) /* Duration */
+      def computation: IO[Unit] = IO(() => Thread.sleep(500))
+      def measure: () => IO[Long] = () => {
+        for {
+          start <- CurrSysTime.description(System.currentTimeMillis)
+          _ <- computation
+          end <- CurrSysTime.description(System.currentTimeMillis)
+          _ <- description(end - start) /* so. so. cool! */
+        } yield end - start
       }
     }
     object Print {
@@ -87,6 +91,7 @@ def main(args: Array[String]): Unit = {
   val start =
     Excercise.CurrSysTime.description(System.currentTimeMillis).unsafeRun()
   Excercise.CurrSysTime.main
-  Excercise.DurationMeasurement.main(start)
+  Excercise.DurationMeasurement.measure().unsafeRun()
   Excercise.Print.description("print some data").unsafeRun()
+
 }
