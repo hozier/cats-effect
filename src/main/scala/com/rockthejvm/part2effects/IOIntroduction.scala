@@ -17,16 +17,11 @@ object IOIntroduction {
 
     /** sequence two IOs, take the result of the first one. */
     def seqTakeFirst[A, B]: (IO[A], IO[B]) => IO[A] = (a, b) => {
-      b.flatMap(_ => a)
+      a.flatMap(v => b.map(_ => v))
     }
 
-    /** repeat an IO forever */
-    def forever[A]: IO[A] => IO[A] = a =>
-      a match {
-        case monadic: IO[A] =>
-          Thread.sleep(500)
-          forever(monadic)
-      }
+    /** repeat an IO forever (called by name/delayed) */
+    def forever[A]: IO[A] => IO[A] = a => a >> forever(a)
 
     /** convert an IO to a different type */
     def convert[A, B]: (IO[A], B) => IO[B] = (a, v) => { a.flatMap(_ => IO(v)) }
@@ -45,9 +40,18 @@ object IOIntroduction {
     }
   }
   def main(args: Array[String]): Unit = {
-    for {
-      total <- IOIntroduction.Excercise.sum(IO(10), 0)
+    import cats.effect.unsafe.implicits.global
+    val solution = for {
+      total <- Excercise.sum(IO(20000), 0)
+      // _ <- Excercise.forever(IO {
+      //   println(s"sleeping=400ms")
+      //   Thread.sleep(400)
+      //   println(s"awake")
+      //   27
+      // })
       _ <- IO(println(s"total=$total"))
     } yield ()
+
+    solution.unsafeRunSync()
   }
 }
