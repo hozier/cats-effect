@@ -1,8 +1,7 @@
 package com.rockthejvm.part1recap
 
-/** @note
-  *   Covers: 1 - given instances, 2 - extension methods, 3 - combining
-  *   given/using to implement type classes
+/** Covers: 1 - given instances, 2 - extension methods, 3 - combining
+  * given/using to implement type classes
   */
 object ContextualAbstractionsScala3 {
   def main(args: Array[String]): Unit = {

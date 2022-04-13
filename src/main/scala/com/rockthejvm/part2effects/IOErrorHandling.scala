@@ -3,8 +3,7 @@ package com.rockthejvm.part2effects
 import cats.effect.IO
 import scala.util.{Failure, Success, Try}
 
-/** @note
-  *   Covers: cats.effect.IO - creating `failed` computations suspended in IO
+/** Covers: cats.effect.IO - creating `failed` computations suspended in IO
   */
 object IOErrorHandling {
   def effectAsEither: IO[Int] => IO[Either[Throwable, Int]] = n => n.attempt

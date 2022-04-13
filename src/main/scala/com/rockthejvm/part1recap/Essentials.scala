@@ -6,11 +6,10 @@ import scala.concurrent.Future
 import scala.util.Success
 import scala.util.Failure
 
-/** @note
-  *   Concept: Futures review Furtures are data structures whose values are
-  *   computed on some other thread at some point in the future. Futures will
-  *   need an implicit execution context (a data structure that will hold the
-  *   mechanism for scheduling threads).
+/** Concept: Futures review Furtures are data structures whose values are
+  * computed on some other thread at some point in the future. Futures will need
+  * an implicit execution context (a data structure that will hold the mechanism
+  * for scheduling threads).
   */
 object Essentials {
   def main(args: Array[String]): Unit =

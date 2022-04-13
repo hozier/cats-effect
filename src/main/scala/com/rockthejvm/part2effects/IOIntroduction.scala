@@ -3,9 +3,8 @@ package com.rockthejvm.part2effects
 import cats.effect.IO
 import scala.io.StdIn
 
-/** @note
-  *   Covers: cats.effect.IO - embodies any kind of computation that might
-  *   perform side effects
+/** Covers: cats.effect.IO - embodies any kind of computation that might perform
+  * side effects
   */
 object IOIntroduction {
   object Excercise {
