@@ -4,9 +4,11 @@ import scala.concurrent.Future
 import java.util.Calendar
 import com.rockthejvm.part2effects.Effects.Excercise
 
-/** @note
-  *   FP: implemented `descriptions` of computation
-  * @example
+/** FP can be described as the composition of `descriptions` of computations. An
+  * `effect` is simply the description of a computation that will be performed
+  * later when we call those unsafe run methods.
+  *
+  * @note
   *   Concretely: an `effect` is a `data type` that embodies the concept of a) a
   *   side effect or b) any sort of computation that we might need in our code.
   *   Abstractly: the concept of a purely functional program may be defined as a
@@ -38,7 +40,6 @@ object Effects {
         }
         val sampleCall: IO[Int] = IO(sampleCallback)
      */
-
   }
   object Excercise {
 

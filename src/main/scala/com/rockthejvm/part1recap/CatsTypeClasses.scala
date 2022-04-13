@@ -1,12 +1,12 @@
 package com.rockthejvm.part1recap
 
-/** @note
-  *   Covers: Fundamental Cats type classes needed to develop with cats-effect.
-  *   Cats is a functional programming library based on type classes. Cats has
-  *   various type classes which include:
+/** Covers: Fundamental Cats type classes needed to develop with cats-effect.
+  * Cats is a functional programming library based on type classes. Cats has
+  * various type classes which include:
   *
-  * a) functor b) applicative c) flatMap d) monad e) apply f)
-  * applicativeError/mondaError g) traverse
+  * @note
+  *   a) functor b) applicative c) flatMap d) monad e) apply f)
+  *   applicativeError/mondaError g) traverse
   */
 object CatsTypeClasses {
 
